@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="进程与线程," />
 
 
 
@@ -81,13 +81,20 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="伏窗尾的猫">
-<meta property="og:url" content="http://yoursite.com/tags/hexo/index.html">
+<meta name="description" content="一、进程　　进程——进程是独立功能的程序关于某个数据集合上的一次运行活动！ 1.1 创建进程函数头文件： #include &amp;lt;unistd.h&amp;gt; 原型： pid_t fork(void); 功能：创建一个进程  返回值：子进程 返回0 父进程 返回子进程的ID  fork简介：fork函数创建了一个新的进程，新的进程即子进程将复制父进程所有的数据与指令，子进程拥有独立的内存空间以及系统">
+<meta name="keywords" content="进程与线程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习之路 —— 进程与线程　　（二）">
+<meta property="og:url" content="http://yoursite.com/2018/09/20/学习之路——进程/index.html">
 <meta property="og:site_name" content="伏窗尾的猫">
+<meta property="og:description" content="一、进程　　进程——进程是独立功能的程序关于某个数据集合上的一次运行活动！ 1.1 创建进程函数头文件： #include &amp;lt;unistd.h&amp;gt; 原型： pid_t fork(void); 功能：创建一个进程  返回值：子进程 返回0 父进程 返回子进程的ID  fork简介：fork函数创建了一个新的进程，新的进程即子进程将复制父进程所有的数据与指令，子进程拥有独立的内存空间以及系统">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2018/09/20/学习之路——进程/exec函数族.png">
+<meta property="og:updated_time" content="2018-09-28T12:17:59.439Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="伏窗尾的猫">
+<meta name="twitter:title" content="学习之路 —— 进程与线程　　（二）">
+<meta name="twitter:description" content="一、进程　　进程——进程是独立功能的程序关于某个数据集合上的一次运行活动！ 1.1 创建进程函数头文件： #include &amp;lt;unistd.h&amp;gt; 原型： pid_t fork(void); 功能：创建一个进程  返回值：子进程 返回0 父进程 返回子进程的ID  fork简介：fork函数创建了一个新的进程，新的进程即子进程将复制父进程所有的数据与指令，子进程拥有独立的内存空间以及系统">
+<meta name="twitter:image" content="http://yoursite.com/2018/09/20/学习之路——进程/exec函数族.png">
 
 
 
@@ -117,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/hexo/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/20/学习之路——进程/"/>
 
 
 
 
 
-  <title>标签: hexo | 伏窗尾的猫</title>
+  <title>学习之路 —— 进程与线程　　（二） | 伏窗尾的猫</title>
   
 
 
@@ -142,7 +149,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -270,54 +277,388 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>hexo<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/20/学习之路——进程/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="喵呜">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="伏窗尾的猫">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/09/08/GCC下逻辑运算符的惰性运算与优先级的思考/" itemprop="url">
-              
-                <span itemprop="name">简易hexo的搭建　　（一）</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">学习之路 —— 进程与线程　　（二）</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-08T13:58:20+08:00"
-              content="2018-09-08" >
-          09-08
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-20T13:58:20+08:00">
+                2018-09-20
+              </time>
+            
 
-    </header>
-  </article>
+            
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-28T20:17:59+08:00">
+                2018-09-28
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习之路/" itemprop="url" rel="index">
+                    <span itemprop="name">学习之路</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/09/20/学习之路——进程/" class="leancloud_visitors" data-flag-title="学习之路 —— 进程与线程　　（二）">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+				 <span>℃<span>
+             </span>
+          
+
+          
+
+		  
+			  <span class="post-meta-divider">|</span>
+			  <span id="busuanzi_value_page_pv"></span>次阅读
+		  
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="一、进程"><a href="#一、进程" class="headerlink" title="一、进程"></a>一、进程</h1><p></p><p style="background-color:rgb(125,255,0)">　　进程——进程是独立功能的程序关于某个数据集合上的一次运行活动！</p>
+<h2 id="1-1-创建进程函数"><a href="#1-1-创建进程函数" class="headerlink" title="1.1 创建进程函数"></a>1.1 创建进程函数</h2><pre><code>头文件： #include &lt;unistd.h&gt;
+原型： pid_t fork(void);
+功能：创建一个进程 
+返回值：子进程 返回0 父进程 返回子进程的ID 
+</code></pre><p>fork简介：fork函数创建了一个新的进程，新的进程即子进程将复制父进程所有的数据与指令，子进程拥有独立的内存空间以及系统资源。</p>
+<p>问题一：fork 成功后子进程从哪里开始执行？</p>
+<p>　　从调用完fork后面的语句处开始执行！</p>
+<p>问题二：父子进程的执行顺序是怎样的？</p>
+<p>　　由时间片轮转调度决定，没有固定的执行顺序。</p>
+<p>问题三：什么是时间片？</p>
+<p>　　时间片：为实现并发，每个进程被分配一个时间段，称作它的时间片，即该进程允许运行的时间。若时间片结束进程还在运行，则cpu将被剥夺并分配给另一个进程，若进程在时间片结束前阻塞或结束，则cpu当即切换。系统内进程按时间顺序排成一个队列，每次调度，系统都将cpu分配给队内首进程，此进程用完它的时间片后被移动到队列的末尾，接着下一个执行。<br>　　时间片过短：导致过多的进程切换，降低效率。<br>　　时间片过长：引起对短的交互请求响应变差。</p>
+<h2 id="1-2-获取标识码函数"><a href="#1-2-获取标识码函数" class="headerlink" title="1.2 获取标识码函数"></a>1.2 获取标识码函数</h2><pre><code>头文件： #include &lt;unistd.h&gt;
+        #include &lt;sys/types.h&gt;
+原型： pid_t getpid(void); //获取本身ID 
+      pid_t getppid(void);//获取父进程ID 
+功能：获取进程号 
+返回值：返回所获取的PID
+</code></pre><h2 id="1-3-进程退出函数"><a href="#1-3-进程退出函数" class="headerlink" title="1.3 进程退出函数"></a>1.3 进程退出函数</h2><p>exit:</p>
+<pre><code>头文件：#include&lt;stdlib.h&gt;
+原型：void exit(int status)；
+功能：用来退出进程，进行清除操作
+参数： 退出码，stasus用来存返回值。
+</code></pre><p>_exit:</p>
+<pre><code>头文件：#include&lt;unistd.h&gt;
+原型：void _exit(int status);
+功能：用来退出进程，立即退出
+参数： 退出码，stasus用来存返回值。
+</code></pre><p>_Exit:</p>
+<pre><code>头文件：#include&lt;stdlib.h&gt;
+原型：void _Exit(int status);
+功能：用来退出进程，立即退出
+参数： 退出码，stasus用来存返回值。
+</code></pre><p>进程死亡：自杀与被杀。自杀：自然死亡与调用退出函数。<br>思考：<br>问题一：return和exit有什么区别？</p>
+<p>a.exit是一个函数，有参数。exit执行完后把控制权交给系统。 </p>
+<p>b.return是函数执行完后的返回。renturn执行完后把控制权交给调用函数。</p>
+<p>问题二：exit与_exit有什么异同？</p>
+<p>相同点：都是用来终止进程的，执行这两个函数时，系统无条件终止所有操作，清除数据，终止进程运行。<br>不同点：_exit执行后立即返回给内核，exit先执行一些清除操作再将控制权交给内核。<br>清除操作：刷新流（stdin，stdout …）,将缓冲区的数据处理完成。</p>
+<p>c.通过实例来区别<br>实例1：exit.c</p>
+<blockquote>
+<p>1 #include “stdio.h”<br>2 #include “stdlib.h”<br>3<br>4 int main()<br>5 {<br>6 printf(“using exit—-\n”);<br>7 printf(“This is the content in buffer”);<br>8 exit(0);<br>9 } </p>
+</blockquote>
+<p>执行结果：</p>
+<blockquote>
+<p>using exit—-<br>This is the content in buffer</p>
+</blockquote>
+<p>实例2：_exit.c</p>
+<blockquote>
+<p>1 #include”stdio.h”<br>2 #include”unistd.h”<br>3<br>4 int main(void)<br>5 {<br>6 printf(“using _exit–\n”);<br>7 printf(“This is the content in buffer”);<br>8 _exit(0);<br>9 }</p>
+</blockquote>
+<p>执行结果：</p>
+<blockquote>
+<p>using exit—-</p>
+</blockquote>
+<p>printf函数就是使用缓冲I/O的方式，该函数在遇到“\n”换行符时自动的从缓冲区中将记录读出。所以exit()将缓冲区的数据写完后才退出，而_exit()函数直接退出。 </p>
+<h2 id="1-4等待子进程结束函数"><a href="#1-4等待子进程结束函数" class="headerlink" title="1.4等待子进程结束函数"></a>1.4等待子进程结束函数</h2><p>wait:</p>
+<pre><code>头文件：#include &lt;sys/types.h&gt;
+       #include &lt;sys/wait.h&gt;
+原型：pid_t wait(int *status);
+功能：等待任意一个子进程状态改变
+参数： 退出码，stasus用来存子进程返回值。
+返回值：成功返回 等待到的子进程进程号
+
+    失败返回-1 同时errno被设置
+</code></pre><p>waitpid    :</p>
+<pre><code>头文件：#include &lt;sys/types.h&gt;
+       #include &lt;sys/wait.h&gt;
+原型：pid_t waitpid(pid_t pid, int *status, int options);
+功能：等待任意一个子进程状态改变
+参数： pid :指定要等待的进程号 
+    stasus :用来存子进程返回值。
+    options :等待模式：0 表示默认选项 阻塞等待
+                WNOHANG 非阻塞等待 假设此时没有子进程退出就立刻返回 不用等待！
+返回值：成功返回 等待到的子进程进程号
+       失败返回-1 同时errno被设置
+</code></pre><p>退出码解析：status用来保存子进程的退出状态的信息，用以下宏来解析。</p>
+<p>WIFEXITED（status） ：如果为真，子进程正常退出。</p>
+<p>WEXITSTATUS (status) ：返回子进程的退出码<br>正常退出 main函数的返回值或者exit _Exit _exit 的参数<br>WIFSIGNALED （status） ：如果为真则表示这个子进程是被一个信号干掉的！<br>WCONTINUED （status）  ：如果为真表示 这个子进程是被信号唤醒的！</p>
+<h1 id="二、exec函数族"><a href="#二、exec函数族" class="headerlink" title="二、exec函数族"></a>二、exec函数族</h1><p></p><p style="background-color:rgb(125,255,0)">　　让另外一个程序文件的数据和指令集合 替换 之前拷贝的数据指令！注意这里的替换只能替换 用户数据和指令 系统数据无法替换！</p>
+<p>如图所示：<img src="/2018/09/20/学习之路——进程/exec函数族.png" alt="进程状态"></p>
+<h2 id="1-1综述exec函数族"><a href="#1-1综述exec函数族" class="headerlink" title="1.1综述exec函数族"></a>1.1综述exec函数族</h2><pre><code>&gt;头文件：#include &lt;unistd.h&gt;
+原型：#include &lt;unistd.h&gt;
+extern char **environ;
+int execl(const char *path,const char *arg, ...);
+int execlp(const char *file, const char *arg, ...);
+int execle(const char *path,const char *arg,..., char * const envp[]);
+int execv(const char *path,char *const argv[]);
+int execvp(const char *file, char *const argv[]);
+int execve(const char *file,char *const argv[],char *const envp[]);
+功能： exec函数族装入并运行程序path/file，并将参数arg0(arg1, arg2, argv[], envp[])传递给子程序
+参数： path :要运行的程序 
+      arg  :存放参数。
+返回值：出错返回-1，
+</code></pre><p>l：list：希望接收到以逗号分隔的参数列表，列表以NULL指针作为结束标志。<br>　　　　　把要执行的那个程序文件的参数，以list的形式输出。<br>v：vector：希望接收到一个以NULL结尾的字符串数组的指针（char* argv[]）<br>　　    　　　把要执行的程序文件的参数 以向量即数组的方式出现<br>p:path：环境变量：整个系统中任何一个进程都可以访问的变量。<br>　　　　　一个以NULL结尾的字符串数组指针，函数可以DOS的PATH变量查找子程序文件<br>e:envp：函数传递指定参数envp，允许改变子进程的环境，无后缀e时，子进程使用当前程序的环境。<br>是不是看的头皮发麻？实践出真知。实例如下：</p>
+<h2 id="2-1-头文件及字符串数组指针的声明"><a href="#2-1-头文件及字符串数组指针的声明" class="headerlink" title="2.1 头文件及字符串数组指针的声明"></a>2.1 头文件及字符串数组指针的声明</h2><pre><code>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;string.h&gt;
+#include &lt;errno.h&gt;
+
+int main(int argc, char *argv[])
+{
+  //以NULL结尾的字符串数组的指针，适合包含v的exec函数参数
+  char *arg[] = {&quot;ls&quot;, &quot;-a&quot;, NULL};
+｝
+</code></pre><h2 id="2-2-创建子进程并调用函数execl"><a href="#2-2-创建子进程并调用函数execl" class="headerlink" title="2.2 创建子进程并调用函数execl"></a>2.2 创建子进程并调用函数execl</h2><ul>
+<li><p>execl 中希望接收以逗号分隔的参数列    表，并以NULL指针为结束标志</p>
+<p>  if( fork() == 0 )<br>  {</p>
+<pre><code>// in clild 
+printf( &quot;1------------execl------------\n&quot; );
+if( execl( &quot;/bin/ls&quot;, &quot;ls&quot;,&quot;-a&quot;, NULL ) == -1 )
+{
+  perror( &quot;execl error &quot; );
+  exit(1);
+}
+</code></pre><p>  }</p>
+</li>
+</ul>
+<h2 id="2-3-创建子进程并调用函数execv"><a href="#2-3-创建子进程并调用函数execv" class="headerlink" title="2.3 创建子进程并调用函数execv"></a>2.3 创建子进程并调用函数execv</h2><ul>
+<li>execv中希望接收一个以NULL结尾的字符串数组的指针<pre><code>if( fork() == 0 )
+{
+  printf(&quot;2------------execv------------\n&quot;);
+  if( execv( &quot;/bin/ls&quot;,arg) &lt; 0)
+  {
+    perror(&quot;execv error &quot;);
+    exit(1);
+  }
+}
+</code></pre></li>
+</ul>
+<h2 id="2-4-创建子进程并调用-execlp"><a href="#2-4-创建子进程并调用-execlp" class="headerlink" title="2.4 创建子进程并调用 execlp"></a>2.4 创建子进程并调用 execlp</h2><ul>
+<li>l 　希望接收以逗号分隔的参数列表，列表以NULL指针作为结束标志</li>
+<li><p>p　是一个以NULL结尾的字符串数组指针，函数可以DOS的PATH变量查找子程序文件</p>
+<pre><code>if( fork() == 0 )
+{
+  printf(&quot;3------------execlp------------\n&quot;);
+  if( execlp( &quot;ls&quot;, &quot;ls&quot;, &quot;-a&quot;, NULL ) &lt; 0 )
+  {
+    perror( &quot;execlp error &quot; );
+    exit(1);
+  }
+}
+</code></pre></li>
+</ul>
+<h2 id="2-５-创建子里程并调用execvp"><a href="#2-５-创建子里程并调用execvp" class="headerlink" title="2.５ 创建子里程并调用execvp"></a>2.５ 创建子里程并调用execvp</h2><ul>
+<li>v 　望接收到一个以NULL结尾的字符串数    组的指针</li>
+<li><p>p　 是一个以NULL结尾的字符串数组指针，函数可以DOS的PATH变量查找子程序文件</p>
+<pre><code> if( fork() == 0 )
+{
+   printf(&quot;4------------execvp------------\n&quot;);
+   if( execvp( &quot;ls&quot;, arg ) &lt; 0 )
+   {
+     perror( &quot;execvp error &quot; );
+     exit( 1 );
+   }
+</code></pre><p>   }</p>
+</li>
+</ul>
+<h2 id="2-6-创建子进程并调用execle"><a href="#2-6-创建子进程并调用execle" class="headerlink" title="2.6 创建子进程并调用execle"></a>2.6 创建子进程并调用execle</h2><ul>
+<li>l 　希望接收以逗号分隔的参数列表，列表以NULL指针作为结束标志</li>
+<li><p>e　函数传递指定参数envp，允许改变子进程的环境，无后缀e时，子进程使用当前程序的环境</p>
+<p>  if( fork() == 0 )<br>  {</p>
+<pre><code>printf(&quot;5------------execle------------\n&quot;);
+if( execle(&quot;/bin/ls&quot;, &quot;ls&quot;, &quot;-a&quot;, NULL, NULL) == -1 )
+{
+  perror(&quot;execle error &quot;);
+  exit(1);
+}
+</code></pre><p>  }</p>
+</li>
+</ul>
+<h2 id="2-7-创建子进程并调用execve"><a href="#2-7-创建子进程并调用execve" class="headerlink" title="2.7 创建子进程并调用execve"></a>2.7 创建子进程并调用execve</h2><ul>
+<li>v 　希望接收到一个以NULL结尾的字符串数组的指针</li>
+<li><p>e 　函数传递指定参数envp，允许改变子进程的环境，无后缀e时，子进程使用当前程序的环境</p>
+<pre><code>if( fork() == 0 )
+{
+  printf(&quot;6------------execve-----------\n&quot;);
+  if( execve( &quot;/bin/ls&quot;, arg, NULL ) == 0)
+  {
+   perror(&quot;execve error &quot;);
+    exit(1);
+  }
+}
+</code></pre></li>
+</ul>
+<h2 id="2-8-类exec函数"><a href="#2-8-类exec函数" class="headerlink" title="2.8 类exec函数"></a>2.8 类exec函数</h2><p>system：用来执行指定的命令或程序<br>    &gt;头文件:#include &lt;stdlib.h&gt;<br>     原型：int system(const char *command);<br>    参数： command 要执行的指令 或者程序<br>    返回值  失败  返回 -1<br>           成功  除此以外进程的 退出码！</p>
+<p>实例：<br>    &gt;cmd[256];<br>    sprintf(cmd,”%s %s %s”,”./hello”,”1”,”2”)<br>    system(cmd);</p>
+<p>文终。</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/进程与线程/" rel="tag"># 进程与线程</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/08/GCC下逻辑运算符的惰性运算与优先级的思考/" rel="next" title="简易hexo的搭建　　（一）">
+                <i class="fa fa-chevron-left"></i> 简易hexo的搭建　　（一）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/09/20/学习之路 —— 进程与线程/" rel="prev" title="学习之路 —— 进程与线程　　（一）">
+                学习之路 —— 进程与线程　　（一） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -325,6 +666,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -345,8 +690,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -415,6 +769,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、进程"><span class="nav-text">一、进程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-创建进程函数"><span class="nav-text">1.1 创建进程函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-获取标识码函数"><span class="nav-text">1.2 获取标识码函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-进程退出函数"><span class="nav-text">1.3 进程退出函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4等待子进程结束函数"><span class="nav-text">1.4等待子进程结束函数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、exec函数族"><span class="nav-text">二、exec函数族</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1综述exec函数族"><span class="nav-text">1.1综述exec函数族</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-头文件及字符串数组指针的声明"><span class="nav-text">2.1 头文件及字符串数组指针的声明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-创建子进程并调用函数execl"><span class="nav-text">2.2 创建子进程并调用函数execl</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-创建子进程并调用函数execv"><span class="nav-text">2.3 创建子进程并调用函数execv</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4-创建子进程并调用-execlp"><span class="nav-text">2.4 创建子进程并调用 execlp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-５-创建子里程并调用execvp"><span class="nav-text">2.５ 创建子里程并调用execvp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-6-创建子进程并调用execle"><span class="nav-text">2.6 创建子进程并调用execle</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-7-创建子进程并调用execve"><span class="nav-text">2.7 创建子进程并调用execve</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-8-类exec函数"><span class="nav-text">2.8 类exec函数</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -573,6 +943,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

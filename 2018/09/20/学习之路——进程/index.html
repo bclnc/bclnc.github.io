@@ -81,19 +81,19 @@
 
 
 
-<meta name="description" content="一、进程　　进程——进程是独立功能的程序关于某个数据集合上的一次运行活动！ 1.1 创建进程函数头文件： #include &amp;lt;unistd.h&amp;gt; 原型： pid_t fork(void); 功能：创建一个进程  返回值：子进程 返回0 父进程 返回子进程的ID  fork简介：fork函数创建了一个新的进程，新的进程即子进程将复制父进程所有的数据与指令，子进程拥有独立的内存空间以及系统">
+<meta name="description" content="一、进程函数　　进程——进程是独立功能的程序关于某个数据集合上的一次运行活动！">
 <meta name="keywords" content="进程与线程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习之路 —— 进程与线程　　（二）">
 <meta property="og:url" content="http://yoursite.com/2018/09/20/学习之路——进程/index.html">
 <meta property="og:site_name" content="伏窗尾的猫">
-<meta property="og:description" content="一、进程　　进程——进程是独立功能的程序关于某个数据集合上的一次运行活动！ 1.1 创建进程函数头文件： #include &amp;lt;unistd.h&amp;gt; 原型： pid_t fork(void); 功能：创建一个进程  返回值：子进程 返回0 父进程 返回子进程的ID  fork简介：fork函数创建了一个新的进程，新的进程即子进程将复制父进程所有的数据与指令，子进程拥有独立的内存空间以及系统">
+<meta property="og:description" content="一、进程函数　　进程——进程是独立功能的程序关于某个数据集合上的一次运行活动！">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/09/20/学习之路——进程/exec函数族.png">
-<meta property="og:updated_time" content="2018-09-28T12:17:59.439Z">
+<meta property="og:updated_time" content="2018-09-29T11:32:08.214Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习之路 —— 进程与线程　　（二）">
-<meta name="twitter:description" content="一、进程　　进程——进程是独立功能的程序关于某个数据集合上的一次运行活动！ 1.1 创建进程函数头文件： #include &amp;lt;unistd.h&amp;gt; 原型： pid_t fork(void); 功能：创建一个进程  返回值：子进程 返回0 父进程 返回子进程的ID  fork简介：fork函数创建了一个新的进程，新的进程即子进程将复制父进程所有的数据与指令，子进程拥有独立的内存空间以及系统">
+<meta name="twitter:description" content="一、进程函数　　进程——进程是独立功能的程序关于某个数据集合上的一次运行活动！">
 <meta name="twitter:image" content="http://yoursite.com/2018/09/20/学习之路——进程/exec函数族.png">
 
 
@@ -336,8 +336,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-28T20:17:59+08:00">
-                2018-09-28
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-29T19:32:08+08:00">
+                2018-09-29
               </time>
             
           </span>
@@ -408,7 +408,7 @@
       
 
       
-        <h1 id="一、进程"><a href="#一、进程" class="headerlink" title="一、进程"></a>一、进程</h1><p></p><p style="background-color:rgb(125,255,0)">　　进程——进程是独立功能的程序关于某个数据集合上的一次运行活动！</p>
+        <h1 id="一、进程函数"><a href="#一、进程函数" class="headerlink" title="一、进程函数"></a>一、进程函数</h1><p></p><p style="background-color:rgb(125,255,0)">　　进程——进程是独立功能的程序关于某个数据集合上的一次运行活动！<br><a id="more"></a></p>
 <h2 id="1-1-创建进程函数"><a href="#1-1-创建进程函数" class="headerlink" title="1.1 创建进程函数"></a>1.1 创建进程函数</h2><pre><code>头文件： #include &lt;unistd.h&gt;
 原型： pid_t fork(void);
 功能：创建一个进程 
@@ -594,8 +594,7 @@ if( execle(&quot;/bin/ls&quot;, &quot;ls&quot;, &quot;-a&quot;, NULL, NULL) == -
 </code></pre></li>
 </ul>
 <h2 id="2-8-类exec函数"><a href="#2-8-类exec函数" class="headerlink" title="2.8 类exec函数"></a>2.8 类exec函数</h2><p>system：用来执行指定的命令或程序<br>    &gt;头文件:#include &lt;stdlib.h&gt;<br>     原型：int system(const char *command);<br>    参数： command 要执行的指令 或者程序<br>    返回值  失败  返回 -1<br>           成功  除此以外进程的 退出码！</p>
-<p>实例：<br>    &gt;cmd[256];<br>    sprintf(cmd,”%s %s %s”,”./hello”,”1”,”2”)<br>    system(cmd);</p>
-<p>文终。</p>
+<p>实例：<br>    &gt;cmd[256];<br>    sprintf(cmd,”%s %s %s”,”./hello”,”1”,”2”)<br>    system(cmd);<br>总结进程：<br>    进程 就是向操作系统申请资源的最小单位！<br>    通过进程可实现并发！因为 进程就实现并发的一种机制！<br>    进程的地址空间相互独立 创建一个进程时其会拷贝父进程的所有数据和指令！<br>    进程间的数据独立！<br>文终。</p>
 
       
     </div>
@@ -626,7 +625,7 @@ if( execle(&quot;/bin/ls&quot;, &quot;ls&quot;, &quot;-a&quot;, NULL, NULL) == -
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/08/GCC下逻辑运算符的惰性运算与优先级的思考/" rel="next" title="简易hexo的搭建　　（一）">
+              <a href="/2018/09/08/hexo--搭建/" rel="next" title="简易hexo的搭建　　（一）">
                 <i class="fa fa-chevron-left"></i> 简易hexo的搭建　　（一）
               </a>
             
@@ -719,7 +718,7 @@ if( execle(&quot;/bin/ls&quot;, &quot;ls&quot;, &quot;-a&quot;, NULL, NULL) == -
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -739,7 +738,7 @@ if( execle(&quot;/bin/ls&quot;, &quot;ls&quot;, &quot;-a&quot;, NULL, NULL) == -
 			
 			  <div class="site-state-item site-state-tags">
 				<a href="/tags/ || tags">
-				  <span class="site-state-item-count">2</span>
+				  <span class="site-state-item-count">3</span>
 				  <span class="site-state-item-name">标签</span>
 				</a>
 			  </div>
@@ -779,7 +778,7 @@ if( execle(&quot;/bin/ls&quot;, &quot;ls&quot;, &quot;-a&quot;, NULL, NULL) == -
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、进程"><span class="nav-text">一、进程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-创建进程函数"><span class="nav-text">1.1 创建进程函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-获取标识码函数"><span class="nav-text">1.2 获取标识码函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-进程退出函数"><span class="nav-text">1.3 进程退出函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4等待子进程结束函数"><span class="nav-text">1.4等待子进程结束函数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、exec函数族"><span class="nav-text">二、exec函数族</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1综述exec函数族"><span class="nav-text">1.1综述exec函数族</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-头文件及字符串数组指针的声明"><span class="nav-text">2.1 头文件及字符串数组指针的声明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-创建子进程并调用函数execl"><span class="nav-text">2.2 创建子进程并调用函数execl</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-创建子进程并调用函数execv"><span class="nav-text">2.3 创建子进程并调用函数execv</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4-创建子进程并调用-execlp"><span class="nav-text">2.4 创建子进程并调用 execlp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-５-创建子里程并调用execvp"><span class="nav-text">2.５ 创建子里程并调用execvp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-6-创建子进程并调用execle"><span class="nav-text">2.6 创建子进程并调用execle</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-7-创建子进程并调用execve"><span class="nav-text">2.7 创建子进程并调用execve</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-8-类exec函数"><span class="nav-text">2.8 类exec函数</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、进程函数"><span class="nav-text">一、进程函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-创建进程函数"><span class="nav-text">1.1 创建进程函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-获取标识码函数"><span class="nav-text">1.2 获取标识码函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-进程退出函数"><span class="nav-text">1.3 进程退出函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4等待子进程结束函数"><span class="nav-text">1.4等待子进程结束函数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、exec函数族"><span class="nav-text">二、exec函数族</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1综述exec函数族"><span class="nav-text">1.1综述exec函数族</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-头文件及字符串数组指针的声明"><span class="nav-text">2.1 头文件及字符串数组指针的声明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-创建子进程并调用函数execl"><span class="nav-text">2.2 创建子进程并调用函数execl</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-创建子进程并调用函数execv"><span class="nav-text">2.3 创建子进程并调用函数execv</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4-创建子进程并调用-execlp"><span class="nav-text">2.4 创建子进程并调用 execlp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-５-创建子里程并调用execvp"><span class="nav-text">2.５ 创建子里程并调用execvp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-6-创建子进程并调用execle"><span class="nav-text">2.6 创建子进程并调用execle</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-7-创建子进程并调用execve"><span class="nav-text">2.7 创建子进程并调用execve</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-8-类exec函数"><span class="nav-text">2.8 类exec函数</span></a></li></ol></li></ol></div>
             
 
           </div>

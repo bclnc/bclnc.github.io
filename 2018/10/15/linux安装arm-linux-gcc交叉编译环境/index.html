@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="linux," />
 
 
 
@@ -81,14 +81,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta name="description" content="linux安装交叉arm-linux-gcc编译环境搭建过程linux版本：Ubuntu 12.04，编译器：arm-2014.05 前言首先简单介绍一下，所谓的搭建交叉编译环境，即安装、配置交叉编译工具链。在该环境下编译出嵌入式Linux系统所需的操作系统、应用程序等，然后再上传到目标机上。 交叉编译工具链是为了编译、链接、处理和调试跨平台体系结构的程序代码。对于交叉开发的工具链来说，在文件名称">
+<meta name="keywords" content="linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux安装arm-linux-gcc交叉编译环境">
+<meta property="og:url" content="http://yoursite.com/2018/10/15/linux安装arm-linux-gcc交叉编译环境/index.html">
 <meta property="og:site_name" content="伏窗尾的猫">
+<meta property="og:description" content="linux安装交叉arm-linux-gcc编译环境搭建过程linux版本：Ubuntu 12.04，编译器：arm-2014.05 前言首先简单介绍一下，所谓的搭建交叉编译环境，即安装、配置交叉编译工具链。在该环境下编译出嵌入式Linux系统所需的操作系统、应用程序等，然后再上传到目标机上。 交叉编译工具链是为了编译、链接、处理和调试跨平台体系结构的程序代码。对于交叉开发的工具链来说，在文件名称">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-20T09:00:32.818Z">
+<meta property="og:updated_time" content="2018-10-15T13:52:53.969Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
+<meta name="twitter:title" content="linux安装arm-linux-gcc交叉编译环境">
+<meta name="twitter:description" content="linux安装交叉arm-linux-gcc编译环境搭建过程linux版本：Ubuntu 12.04，编译器：arm-2014.05 前言首先简单介绍一下，所谓的搭建交叉编译环境，即安装、配置交叉编译工具链。在该环境下编译出嵌入式Linux系统所需的操作系统、应用程序等，然后再上传到目标机上。 交叉编译工具链是为了编译、链接、处理和调试跨平台体系结构的程序代码。对于交叉开发的工具链来说，在文件名称">
 
 
 
@@ -118,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/15/linux安装arm-linux-gcc交叉编译环境/"/>
 
 
 
 
 
-  <title>categories | 伏窗尾的猫</title>
+  <title>linux安装arm-linux-gcc交叉编译环境 | 伏窗尾的猫</title>
   
 
 
@@ -273,40 +277,257 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/15/linux安装arm-linux-gcc交叉编译环境/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="喵呜">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="伏窗尾的猫">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">categories</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 2 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/学习之路/">学习之路</a><span class="category-list-count">5</span></li></ul>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">linux安装arm-linux-gcc交叉编译环境</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-15T21:10:14+08:00">
+                2018-10-15
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-10-15T21:52:53+08:00">
+                2018-10-15
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习之路/" itemprop="url" rel="index">
+                    <span itemprop="name">学习之路</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/10/15/linux安装arm-linux-gcc交叉编译环境/" class="leancloud_visitors" data-flag-title="linux安装arm-linux-gcc交叉编译环境">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+				 <span>℃<span>
+             </span>
+          
+
+          
+
+		  
+			  <span class="post-meta-divider">|</span>
+			  <span id="busuanzi_value_page_pv"></span>次阅读
+		  
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="linux安装交叉arm-linux-gcc编译环境搭建过程"><a href="#linux安装交叉arm-linux-gcc编译环境搭建过程" class="headerlink" title="linux安装交叉arm-linux-gcc编译环境搭建过程"></a>linux安装交叉arm-linux-gcc编译环境搭建过程</h1><p>linux版本：Ubuntu 12.04，编译器：arm-2014.05</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>首先简单介绍一下，所谓的搭建交叉编译环境，即安装、配置交叉编译工具链。在该环境下编译出嵌入式Linux系统所需的操作系统、应用程序等，然后再上传到目标机上。</p>
+<p>交叉编译工具链是为了编译、链接、处理和调试跨平台体系结构的程序代码。对于交叉开发的工具链来说，在文件名称上加了一个前缀，用来区别本地的工具链。例如，arm-linux-表示是对arm的交叉编译工具链；arm-linux-gcc表示是使用gcc的编译器。除了体系结构相关的编译选项以外，其使用方法与Linux主机上的gcc相同，所以Linux编程技术对于嵌入式同样适用。不过，并不是任何一个版本拿来都能用，各种软件包往往存在版本匹配问题。</p>
+<p>那么gcc和arm-linux-gcc的区别是什么呢？区别就是gcc是linux下的C语言编译器，编译出来的程序在本地执行，而arm-linux-gcc用来在linux下跨平台的C语言编译器，编译出来的程序在目标机(如ARM平台)上执行，嵌入式开发应使用嵌入式交叉编译工具链。</p>
+<h2 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h2><p>首先将下载好的压缩包存放在ubantu某目录下，解压：</p>
+<blockquote>
+<p>sudo tar -xjvf arm-linux-gcc-2014.tar.bz2 </p>
+</blockquote>
+<p>移动到目标目录：usr/local/arm</p>
+<blockquote>
+<p>sudo cp arm-2014.05 /usr/local/arm</p>
+</blockquote>
+<p>如果没有arm文件夹的话就自己新建一个.</p>
+<blockquote>
+<p>cd /usr/local/arm</p>
+<p>mkdir arm</p>
+</blockquote>
+<p>更改环境变量：</p>
+<blockquote>
+<p>sudo vim /etc/profile</p>
+</blockquote>
+<p>在最后添加</p>
+<blockquote>
+<p>export PATH=$PATH:usr/local/arm/arm-2014.05/bin</p>
+</blockquote>
+<p>在上一命令中，$PATH:后面添加的是安装包解压后的路径，为确保路径的准确性，移动到复制到的目标路径，执行pwd指令，获取准确路径，添加环境变量。</p>
+<p>进入所添加的环境变量的路径：</p>
+<blockquote>
+<p>cd /etc/local/arm/arm-2014.05/bin</p>
+</blockquote>
+<p>建立软链接：</p>
+<blockquote>
+<p>sudo ln -s arm-none-linux-gnueabi-gcc arm-linux-gcc</p>
+</blockquote>
+<p>重启：</p>
+<blockquote>
+<p>sudo reboot</p>
+</blockquote>
+<p>重启后打开终端，检查环境变量是否更改</p>
+<blockquote>
+<p>echo $PATH</p>
+</blockquote>
+<p>如果显示有之前添加的路径，则成功加入环境变量，但不一定成功，还需输入：</p>
+<blockquote>
+<p>which arm-linux-gcc</p>
+</blockquote>
+<p>如果显示的路径与自身路径不符，大致是之前所安装的旧版本，这时，可以进入所显示的路径，删除之前所安装的旧版本。</p>
+<p>而后再次检查：<br>arm-linux-gcc -v</p>
+<p>显示版本为2014.05则安装完成。</p>
+<h2 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h2><ul>
+<li><p>在此之前，安装包解压的路径可以是任意的，但建议是本文所安装的路径。</p>
+</li>
+<li><p>环境变量的修改有多种方式，本文介绍的是仅当前用户可用的方式，比较安全。想了解其他的安装方式可参考其余大神的作品。</p>
+</li>
+<li><p>让环境变量的路径生效可手动，可重启，由于ubantu中的.bashrc文件的位置千奇百怪，所以在不知道得情况下重启是一个好的选择。</p>
+</li>
+<li><p>手动生效方式:</p>
+</li>
+</ul>
+<blockquote>
+<p>source /root/.bashrc<br>souce/home/xxx/.bashrc</p>
+</blockquote>
+<p>文终。</p>
+<p>- </p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/linux/" rel="tag"># linux</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/11/c-学习概述/" rel="next" title="c++学习概述">
+                <i class="fa fa-chevron-left"></i> c++学习概述
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -339,8 +560,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -409,6 +639,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#linux安装交叉arm-linux-gcc编译环境搭建过程"><span class="nav-text">linux安装交叉arm-linux-gcc编译环境搭建过程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装步骤"><span class="nav-text">安装步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意："><span class="nav-text">注意：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

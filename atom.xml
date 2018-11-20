@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-19T13:08:17.932Z</updated>
+  <updated>2018-10-31T08:19:44.925Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,16 +17,52 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>简单排序算法</title>
-    <link href="http://yoursite.com/2018/10/19/%E7%AE%80%E5%8D%95%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
-    <id>http://yoursite.com/2018/10/19/简单排序算法/</id>
-    <published>2018-10-19T13:08:17.000Z</published>
-    <updated>2018-10-19T13:08:17.932Z</updated>
+    <title>笔试常见问题汇总</title>
+    <link href="http://yoursite.com/2018/10/31/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
+    <id>http://yoursite.com/2018/10/31/网络编程问题汇总/</id>
+    <published>2018-10-31T05:34:25.000Z</published>
+    <updated>2018-10-31T08:19:44.925Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="网络编程的常见问题"><a href="#网络编程的常见问题" class="headerlink" title="网络编程的常见问题"></a>网络编程的常见问题</h2><h3 id="1、TCP和UDP的区别。"><a href="#1、TCP和UDP的区别。" class="headerlink" title="1、TCP和UDP的区别。"></a>1、TCP和UDP的区别。</h3><p>这是一个超级常见的问题，只要考网络编程就会有，但是实际上想说全比较难，建议写成两行，对比观看就很清楚。</p><p>TCP：面向连接的可靠的字节流服务。用户数据稳定，有序的进行传输，占用资源也多。（关键词，连接，可靠，字节流，稳定有序，占资源）    　　　　</p><p>UDP:无连接，不可靠的用户数据报服务。数据尽可能的高效发送，会丢包，数据传输也可能无序。（关键词，无连接，不可靠，数据报，高效无序，资源损耗少）</p><h3 id="2、多线程是怎么实现同步的。"><a href="#2、多线程是怎么实现同步的。" class="headerlink" title="2、多线程是怎么实现同步的。"></a>2、多线程是怎么实现同步的。</h3><p>这个问题可能是简答题（事件，信号量，互斥锁，），也可能是一个编程题，编程题最常见的就是写两个线程实现交替打印奇数和偶数。就以这个作为例子吧。首先写两个函数，一个打印奇数，一个打印偶数。（用一个全局变量，交替加1就行。）</p>]]></content>
     
     <summary type="html">
     
+      
+      
+        &lt;h2 id=&quot;网络编程的常见问题&quot;&gt;&lt;a href=&quot;#网络编程的常见问题&quot; class=&quot;headerlink&quot; title=&quot;网络编程的常见问题&quot;&gt;&lt;/a&gt;网络编程的常见问题&lt;/h2&gt;&lt;h3 id=&quot;1、TCP和UDP的区别。&quot;&gt;&lt;a href=&quot;#1、TCP和UDP的区别
+      
+    
     </summary>
     
+      <category term="学习之路" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+    
+    
+      <category term="笔试常见问题汇总" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AF%95%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>字符串操作</title>
+    <link href="http://yoursite.com/2018/10/25/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C/"/>
+    <id>http://yoursite.com/2018/10/25/字符串操作/</id>
+    <published>2018-10-24T16:19:43.000Z</published>
+    <updated>2018-10-24T17:12:32.366Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="字符串操作"><a href="#字符串操作" class="headerlink" title="字符串操作"></a>字符串操作</h1><p>　　最近面试了很多家，都考到了string操作，如strcpy，strcmp等，虽然感觉很简单，但是写的很乱，其实对于笔试是没有任何好处的，尽量的写的严谨，精致。下面总结一下怎么实现这几个函数。</p><h2 id="Strcpy"><a href="#Strcpy" class="headerlink" title="Strcpy"></a>Strcpy</h2><p>　　Strcpy（）这个函数就是用来复制字符串的，拷贝一个字符串，原字符串不能被更改，否则会出错。则被拷贝函数要加上const。所以函数声明为，</p><pre><code>char *Strcpy(char *dst,const char *src);</code></pre><p>为了保证函数的健壮性，要对指针的有效性进行检查，所以要使用assert函数，</p><pre><code>assert（dst !=NULL &amp;&amp; src !=NULL）;</code></pre><p>而后，要保存返回的地址，即dst，而赋值操作要对dst进行移位赋值，所以要定义一个新的指针来进行移位赋值操作。</p><pre><code>char *ret = dst；</code></pre><p>最关键的一步，循环赋值，用while函数</p><pre><code>while（(*ret++ = *src++) ！=&apos;\0&apos;)</code></pre><p>赋值到src 为’\0’,并且’\0’也被赋值，返回值为dst。</p><h2 id="内存重叠"><a href="#内存重叠" class="headerlink" title="内存重叠"></a>内存重叠</h2><p>如果考虑到内存重叠，（即两个字符串有共同区域）可以新开辟一段空间去保存被拷贝函数，然后将保存的值存入要拷贝到的地址，还可以通过逆序拷贝的方式。</p><p>首先还是函数声明</p><pre><code>char *memcpy(char *dst,const char *src，int len)</code></pre><p>健壮性，指针有效性检测</p><pre><code>assert(dst!= NULL &amp;&amp; src != NULL)</code></pre><p>保存首地址char *ret = dst；</p><p>判断是否存在内存重叠，重叠只有一种可能，源字符串的尾部被覆盖，也就是src&lt;= dst&lt;=src+len(len=strlen(src)+1),此时倒叙赋值就好了。这样就避免了重覆盖。没内存重叠的时候就顺序赋值就好了。<br>    if(src&lt;= dst &amp;&amp; dst&lt;=src+len-1)<br>    {<br>        dst=dst+len-1；<br>        src=src+len-1；<br>        while(len–)<br>        {<br>            <em>dst– = </em>src–;<br>        }<br>    }<br>    else<br>    {<br>        while(len–)<br>        <em>dst++ = </em>src++;<br>    }</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;字符串操作&quot;&gt;&lt;a href=&quot;#字符串操作&quot; class=&quot;headerlink&quot; title=&quot;字符串操作&quot;&gt;&lt;/a&gt;字符串操作&lt;/h1&gt;&lt;p&gt;　　最近面试了很多家，都考到了string操作，如strcpy，strcmp等，虽然感觉很简单，但是写的很乱，其实对
+      
+    
+    </summary>
+    
+      <category term="学习之路" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+    
+    
+      <category term="字符串操作" scheme="http://yoursite.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C/"/>
     
   </entry>
   

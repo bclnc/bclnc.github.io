@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-04T08:11:19.405Z</updated>
+  <updated>2018-12-04T08:32:34.125Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/2018/12/04/%E7%AE%80%E6%98%93%E7%9A%84hexo%E6%90%AD%E5%BB%BA%E4%BA%8C/"/>
     <id>http://yoursite.com/2018/12/04/简易的hexo搭建二/</id>
     <published>2018-12-04T07:31:57.000Z</published>
-    <updated>2018-12-04T08:11:19.405Z</updated>
+    <updated>2018-12-04T08:32:34.125Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="启言"><a href="#启言" class="headerlink" title="启言"></a>启言</h2><p>　　从上一次写hexo到现在已经过去了很长一段时间了，利用next美化界面还没写，真的懒啊，但是呢，今天看到关于域名的一些东西（<strong>其实就是腾讯超便宜的域名让我动心了</strong>），突然想起我还用着github的二级域名，没牌面啊。于是，赶紧买个域名，虽然穷，但是穷有穷的装法不是？话不多说，开始吧。</p><h2 id="垃圾佬的乐趣——便宜域名的获取及设置"><a href="#垃圾佬的乐趣——便宜域名的获取及设置" class="headerlink" title="垃圾佬的乐趣——便宜域名的获取及设置"></a>垃圾佬的乐趣——便宜域名的获取及设置</h2><p>　　用的是腾讯的域名哈，在空间看到的，就不给他打广告了（三块钱买不了吃亏，买不了上当，但是可以很快乐）。　　</p><p>　　买了之后登陆腾讯云，然后找到域名那块地方。如下图：</p><p><img src="/2018/12/04/简易的hexo搭建二/域名设置1.png" alt="域名设置1"></p><p>　　点一下解析，进入第二个界面：</p><p><img src="/2018/12/04/简易的hexo搭建二/域名设置1.png" alt="域名设置1"></p><blockquote><p>添加记录</p><p>主机记录选择: www , @ </p><p>记录类型：CNAME,</p><p>线路类型:默认，</p><p>记录值：就是你的github的库，也就是前文的所写的</p></blockquote><blockquote><p>用户名.github.io</p></blockquote><p>然后，等等，再等等，再等等，（稍微有点久，至少我有点久），直到进域名的时候，弹出github的404页面。证明成功映射到了github网站啦。那这边就大功告成啦。</p><h2 id="最后的牢骚——hexo本地配置"><a href="#最后的牢骚——hexo本地配置" class="headerlink" title="最后的牢骚——hexo本地配置"></a>最后的牢骚——hexo本地配置</h2><p>打开本地hexo——进入source——创建CNAME文件（不是文件夹，是文件，不带后缀的）——记事本打开——添加域名（不带www，就买的啥样就写啥样）——保存</p><p>打开git bash——进入hexo——gexo clean——hexo g——hexo d。</p><p>然后，然后就搞定了。</p><p>文终。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="启言"><a href="#启言" class="headerlink" title="启言"></a>启言</h2><p>　　从上一次写hexo到现在已经过去了很长一段时间了，利用next美化界面还没写，真的懒啊，但是呢，今天看到关于域名的一些东西（<strong>其实就是腾讯超便宜的域名让我动心了</strong>），突然想起我还用着github的二级域名，没牌面啊。于是，赶紧买个域名，虽然穷，但是穷有穷的装法不是？话不多说，开始吧。</p><h2 id="垃圾佬的乐趣——便宜域名的获取及设置"><a href="#垃圾佬的乐趣——便宜域名的获取及设置" class="headerlink" title="垃圾佬的乐趣——便宜域名的获取及设置"></a>垃圾佬的乐趣——便宜域名的获取及设置</h2><p>　　用的是腾讯的域名哈，在空间看到的，就不给他打广告了（三块钱买不了吃亏，买不了上当，但是可以很快乐）。　　</p><p>　　买了之后登陆腾讯云，然后找到域名那块地方。如下图：</p><p><img src="/2018/12/04/简易的hexo搭建二/域名设置1.png" alt="域名设置1"></p><p>　　点一下解析，进入第二个界面：</p><p><img src="/2018/12/04/简易的hexo搭建二/域名设置2.png" alt="域名设置1"></p><blockquote><p>添加记录</p><p>主机记录选择: www , @ </p><p>记录类型：CNAME,</p><p>线路类型:默认，</p><p>记录值：就是你的github的库，也就是前文的所写的</p></blockquote><blockquote><p>用户名.github.io</p></blockquote><p>然后，等等，再等等，再等等，（稍微有点久，至少我有点久），直到进域名的时候，弹出github的404页面。证明成功映射到了github网站啦。在等待的时间可以去执行下一步。</p><h2 id="最后的牢骚——hexo本地配置"><a href="#最后的牢骚——hexo本地配置" class="headerlink" title="最后的牢骚——hexo本地配置"></a>最后的牢骚——hexo本地配置</h2><p>打开本地hexo——进入source——创建CNAME文件（不是文件夹，是文件，不带后缀的）——记事本打开——添加域名（不带www，就买的啥样就写啥样）——保存</p><p>打开git bash——进入hexo——gexo clean——hexo g——hexo d。</p><p>然后，然后刷新域名，就搞定了。</p><p>文终。</p>]]></content>
     
     <summary type="html">
     

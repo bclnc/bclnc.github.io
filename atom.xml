@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2018-12-04T08:36:56.116Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://bclnc.github.io/"/>
+  <updated>2018-12-06T06:14:19.136Z</updated>
+  <id>http://bclnc.github.io/</id>
   
   <author>
     <name>喵呜</name>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>简易hexo的搭建　　（二）</title>
-    <link href="http://yoursite.com/2018/12/04/%E7%AE%80%E6%98%93%E7%9A%84hexo%E6%90%AD%E5%BB%BA%E4%BA%8C/"/>
-    <id>http://yoursite.com/2018/12/04/简易的hexo搭建二/</id>
+    <link href="http://bclnc.github.io/2018/12/04/%E7%AE%80%E6%98%93%E7%9A%84hexo%E6%90%AD%E5%BB%BA%E4%BA%8C/"/>
+    <id>http://bclnc.github.io/2018/12/04/简易的hexo搭建二/</id>
     <published>2018-12-04T07:31:57.000Z</published>
-    <updated>2018-12-04T08:36:56.116Z</updated>
+    <updated>2018-12-06T06:14:19.136Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="启言"><a href="#启言" class="headerlink" title="启言"></a>启言</h2><p>　　从上一次写hexo到现在已经过去了很长一段时间了，利用next美化界面还没写，真的懒啊，但是呢，今天看到关于域名的一些东西（<strong>其实就是腾讯超便宜的域名让我动心了</strong>），突然想起我还用着github的二级域名，没牌面啊。于是，赶紧买个域名，虽然穷，但是穷有穷的装法不是？话不多说，开始吧。</p><h2 id="垃圾佬的乐趣——便宜域名的获取及设置"><a href="#垃圾佬的乐趣——便宜域名的获取及设置" class="headerlink" title="垃圾佬的乐趣——便宜域名的获取及设置"></a>垃圾佬的乐趣——便宜域名的获取及设置</h2><p>　　用的是腾讯的域名哈，在空间看到的，就不给他打广告了（三块钱买不了吃亏，买不了上当，但是可以很快乐）。　　</p><p>　　买了之后登陆腾讯云，然后找到域名那块地方。如下图：</p><p><img src="./简易的hexo搭建二/域名设置1.png" alt="域名设置1"></p><p>　　点一下解析，进入第二个界面：</p><p><img src="./简易的hexo搭建二/域名设置2.png" alt="域名设置2"></p><blockquote><p>添加记录</p><p>主机记录选择: www , @ </p><p>记录类型：CNAME,</p><p>线路类型:默认，</p><p>记录值：就是你的github的库，也就是前文的所写的</p></blockquote><blockquote><p>用户名.github.io</p></blockquote><p>然后，等等，再等等，再等等，（稍微有点久，至少我有点久），直到进域名的时候，弹出github的404页面。证明成功映射到了github网站啦。在等待的时间可以去执行下一步。</p><h2 id="最后的牢骚——hexo本地配置"><a href="#最后的牢骚——hexo本地配置" class="headerlink" title="最后的牢骚——hexo本地配置"></a>最后的牢骚——hexo本地配置</h2><p>打开本地hexo——进入source——创建CNAME文件（不是文件夹，是文件，不带后缀的）——记事本打开——添加域名（不带www，就买的啥样就写啥样）——保存</p><p>打开git bash——进入hexo——gexo clean——hexo g——hexo d。</p><p>然后，然后刷新域名，就搞定了。</p><p>文终。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="启言"><a href="#启言" class="headerlink" title="启言"></a>启言</h2><p>　　从上一次写hexo到现在已经过去了很长一段时间了，利用next美化界面还没写，真的懒啊，但是呢，今天看到关于域名的一些东西（<strong>其实就是腾讯超便宜的域名让我动心了</strong>），突然想起我还用着github的二级域名，没牌面啊。于是，赶紧买个域名，虽然穷，但是穷有穷的装法不是？话不多说，开始吧。</p><h2 id="垃圾佬的乐趣——便宜域名的获取及设置"><a href="#垃圾佬的乐趣——便宜域名的获取及设置" class="headerlink" title="垃圾佬的乐趣——便宜域名的获取及设置"></a>垃圾佬的乐趣——便宜域名的获取及设置</h2><p>　　用的是腾讯的域名哈，在空间看到的，就不给他打广告了（三块钱买不了吃亏，买不了上当，但是可以很快乐）。　　</p><p>　　买了之后登陆腾讯云，然后找到域名那块地方。如下图：</p><p><img src="//bclnc.github.io/2018/12/04/简易的hexo搭建二/域名设置1.png" alt="域名设置1"></p><p>　　点一下解析，进入第二个界面：</p><p><img src="//bclnc.github.io/2018/12/04/简易的hexo搭建二/域名设置2.png" alt="域名设置2"></p><blockquote><p>添加记录</p><p>主机记录选择: www , @ </p><p>记录类型：CNAME,</p><p>线路类型:默认，</p><p>记录值：就是你的github的库，也就是前文的所写的</p></blockquote><blockquote><p>用户名.github.io</p></blockquote><p>然后，等等，再等等，再等等，（稍微有点久，至少我有点久），直到进域名的时候，弹出github的404页面。证明成功映射到了github网站啦。在等待的时间可以去执行下一步。</p><h2 id="最后的牢骚——hexo本地配置"><a href="#最后的牢骚——hexo本地配置" class="headerlink" title="最后的牢骚——hexo本地配置"></a>最后的牢骚——hexo本地配置</h2><p>打开本地hexo——进入source——创建CNAME文件（不是文件夹，是文件，不带后缀的）——记事本打开——添加域名（不带www，就买的啥样就写啥样）——保存</p><p>打开git bash——进入hexo——gexo clean——hexo g——hexo d。</p><p>然后，然后刷新域名，就搞定了。</p><p>文终。</p>]]></content>
     
     <summary type="html">
     
@@ -34,21 +34,21 @@
     
     </summary>
     
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+      <category term="hexo" scheme="http://bclnc.github.io/categories/hexo/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="http://bclnc.github.io/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>ARM随记</title>
-    <link href="http://yoursite.com/2018/11/20/ARM%E9%9A%8F%E8%AE%B0/"/>
-    <id>http://yoursite.com/2018/11/20/ARM随记/</id>
+    <link href="http://bclnc.github.io/2018/11/20/ARM%E9%9A%8F%E8%AE%B0/"/>
+    <id>http://bclnc.github.io/2018/11/20/ARM随记/</id>
     <published>2018-11-20T10:41:51.000Z</published>
     <updated>2018-12-06T03:36:27.878Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="ARM"><a href="#ARM" class="headerlink" title="ARM"></a>ARM</h1><h3 id="冯诺依曼结构的计算机有哪些组成部分？"><a href="#冯诺依曼结构的计算机有哪些组成部分？" class="headerlink" title="冯诺依曼结构的计算机有哪些组成部分？"></a>冯诺依曼结构的计算机有哪些组成部分？</h3><p>　　控制器，运算器，存储器，输入设备，输出设备</p><h3 id="冯诺依曼结构和哈佛结构的区别是什么？"><a href="#冯诺依曼结构和哈佛结构的区别是什么？" class="headerlink" title="冯诺依曼结构和哈佛结构的区别是什么？"></a>冯诺依曼结构和哈佛结构的区别是什么？</h3><p>　　而冯.诺依曼结构将指令存储器和数据存储器合在一起的存储器结构；</p><p><img src="ARM随记/冯诺依曼结构.png" alt="冯诺依曼"></p><p>　哈佛结构是将指令存储器和数据存储器分开的一种存储器结构；</p><p><img src="ARM随记/哈佛结构.png" alt="哈佛">　　</p><h3 id="冯诺依曼结构和哈佛结构相比较，各自的优缺点是什么？"><a href="#冯诺依曼结构和哈佛结构相比较，各自的优缺点是什么？" class="headerlink" title="冯诺依曼结构和哈佛结构相比较，各自的优缺点是什么？"></a>冯诺依曼结构和哈佛结构相比较，各自的优缺点是什么？</h3><p>　　在典型情况下，完成一条指令需要经过三个步骤，取指令，指令译码，执行指令，而冯诺依曼结构的指令存储器和数据存储器在同一存储空间，经由一根总线传输，所以取指令和执行指令不能重叠执行，只能完成一个后再执行下一个。<br><img src="ARM随记/冯诺依曼执行.png" alt="冯诺依曼"></p><p>　　而哈佛结构由于取指和执行经由不同的储存空间和总线，使得各条指令能够重叠执行，提高了执行效率。<br><img src="ARM随记/哈佛执行.png" alt="哈佛"></p><h3 id="数据总线，地址总线和控制总线"><a href="#数据总线，地址总线和控制总线" class="headerlink" title="数据总线，地址总线和控制总线"></a>数据总线，地址总线和控制总线</h3><p><strong>数据总线（Data Bus）</strong>：</p><p>（1）数据总线是cpu和内存或其他期间之间数据交互的通道（双向）</p><p>（2）数据总线的宽度决定了cpu和外界的传输速度</p><p>（3）每条传输线一次只能传输一位二进制数，也就是说一次可传输数据大小为：2^n</p><p><strong>地址总线（Address Bus）</strong>：</p><p>（1）cpu通过地址总线来指定存储单元进行获取或存入（单向，从cpu传向外部设备或I/O端口）</p><p>（2）地址总线决定了cpu所能访问的最大内存空间的大小2^N,N为地址线数量.</p><p><strong>控制总线（Control Bus）</strong>：</p><p>（1）用来传送控制信号和时序信号（cpu向存储器或其他设备发送的读写信号，中断响应信号等，也有其他设备反馈给cpu的信号）</p><p>（）控制总线的宽度决定了cpu对外部设备的控制能力</p><h3 id="CPU的工作原理"><a href="#CPU的工作原理" class="headerlink" title="CPU的工作原理"></a>CPU的工作原理</h3><p>cpu从逻辑上分为三个部分，<code>控制单元</code>，<code>存储单元</code>和<code>运算单元</code>，这三部分由cpu内部总线连接起来。CPU从内存中一条一条地取出指令和相应的数据，按指令操作码的规定，对数据进行运算处理，直到程序执行完毕为止。</p><p><img src="ARM随记/cpu.png" alt="cpu"></p><p><code>**控制单元**</code>:由指令寄存器IR(instruction register)、指令译码器ID(Instruction Decoder)和操作控制器OC(Operation Controller)等组成。根据用户的程序，从存储器中取出指令，放在指令寄存器IR中，然后通过ID译码器分析应该进行什么操作，最后通过控制操作器按时序向相应的不见发送控制信号。</p><p><code>**运算单元**</code>：接受控制单元的命令，进行算数操作。</p><p><code>**存储单元**</code>：包括cpu片内缓存和寄存器组，保存着待处理数据或已经处理过的数据。</p><p>经细化概括后，绘制图示：<br><img src="ARM随记/cpu流程.png" alt="cpu"></p><p>总结一下，CPU的运行原理就是：<code>控制单元在时序脉冲的作用下，将指令计数器里所指向的指令地址(这个地址是在内存里的)送到地址总线上去，然后CPU将这个地址里的指令读到指令寄存器进行译码。对于执行指令过程中所需要用到的数据，会将数据地址也送到地址总线，然后CPU把数据读到CPU的内部存储单元(就是内部寄存器)暂存起来，最后命令运算单元对数据进行处理加工。周而复始，一直这样执行下去，天荒地老，海枯枝烂，直到停电。</code></p><h3 id="流水线"><a href="#流水线" class="headerlink" title="流水线"></a>流水线</h3><p>（1）什么是流水线？</p><p>　　为提高cpu利用率，加快执行速度，将指令分为若干阶段，可并行执行不同指令的不同阶段，从而多个指令同时执行。</p><p>（2）为什么要使用流水线？</p><p>　　提高cpu利用率，提升指令执行速度。</p><p>（3）5级流水线有哪些？</p><p>　　取址，译码/读寄存器、执行/计算有效地址、访问内存（读写）、结果写回寄存器。</p><p>（4）流水线阻塞的原因。</p><p>　　+ 结构相关：硬件资源不足，冲突。</p><p>　　+ 数据相关：一条指令需要前面某条指令的执行结果，而两者并行执行时。</p><p>　　+ 控制相关：有跳转语句，分支指令等。</p><h3 id="指令集介绍"><a href="#指令集介绍" class="headerlink" title="指令集介绍"></a>指令集介绍</h3><p>ARM公司设计的CPU支持多种指令集。</p><p>ARM指令集（32位）</p><p>thumb指令集（16位）<br>　<br>thumb指令集（32位）</p><p>ARM code对应的cpu状态为ARM State；Thumb code对应的cpu状态为thumb状态。如果程序的某一部分工作在ARM状态，一部分工作在Thumb状态，而这两段代码相互调用，则在编译的时候要加上-apcs/interwork选项。</p><h3 id="STM32寄存器介绍。"><a href="#STM32寄存器介绍。" class="headerlink" title="STM32寄存器介绍。"></a>STM32寄存器介绍。</h3><p>通用寄存器：</p><p>R0-R7:thumb和thumb-2均可访问<br>R8-R12:少量thumb可访问，thumb-2都可以访问。</p><p>专用寄存器：<br>R13（sp） R14（LR） R15(PC) xPSR</p><p>R13(SP) stack pointer 堆栈指针，用来保存堆栈的栈顶地址</p><p>　　“堆栈”——后进先出，使用的目的是为了支持函数调用，达到现场保护的目的。</p><p>用ｃ语言来描述，当程序进入某一函数时，操作形参，不改变实参的值，此时形参就是存储在栈区。假设过程Ａ执行过程中调用Ｂ，此时执行会操作寄存器，但是被操作的寄存器可能有Ａ中的重要数据，改变了重要数据，显然是不对的，这时候就需要现场保护了。将寄存器中的数据存储至内存，当调用结束再从内存中将数据加载（load）到寄存器中。</p><p>R14(LR)：linker register 链接寄存器</p><p>保存下一条指令，这指令时保存过程调用后返回的值。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="ARM"><a href="#ARM" class="headerlink" title="ARM"></a>ARM</h1><h3 id="冯诺依曼结构的计算机有哪些组成部分？"><a href="#冯诺依曼结构的计算机有哪些组成部分？" class="headerlink" title="冯诺依曼结构的计算机有哪些组成部分？"></a>冯诺依曼结构的计算机有哪些组成部分？</h3><p>　　控制器，运算器，存储器，输入设备，输出设备</p><h3 id="冯诺依曼结构和哈佛结构的区别是什么？"><a href="#冯诺依曼结构和哈佛结构的区别是什么？" class="headerlink" title="冯诺依曼结构和哈佛结构的区别是什么？"></a>冯诺依曼结构和哈佛结构的区别是什么？</h3><p>　　而冯.诺依曼结构将指令存储器和数据存储器合在一起的存储器结构；</p><p><img src="//bclnc.github.io/2018/11/20/ARM随记/冯诺依曼结构.png" alt="冯诺依曼"></p><p>　哈佛结构是将指令存储器和数据存储器分开的一种存储器结构；</p><p><img src="//bclnc.github.io/2018/11/20/ARM随记/哈佛结构.png" alt="哈佛">　　</p><h3 id="冯诺依曼结构和哈佛结构相比较，各自的优缺点是什么？"><a href="#冯诺依曼结构和哈佛结构相比较，各自的优缺点是什么？" class="headerlink" title="冯诺依曼结构和哈佛结构相比较，各自的优缺点是什么？"></a>冯诺依曼结构和哈佛结构相比较，各自的优缺点是什么？</h3><p>　　在典型情况下，完成一条指令需要经过三个步骤，取指令，指令译码，执行指令，而冯诺依曼结构的指令存储器和数据存储器在同一存储空间，经由一根总线传输，所以取指令和执行指令不能重叠执行，只能完成一个后再执行下一个。<br><img src="//bclnc.github.io/2018/11/20/ARM随记/冯诺依曼执行.png" alt="冯诺依曼"></p><p>　　而哈佛结构由于取指和执行经由不同的储存空间和总线，使得各条指令能够重叠执行，提高了执行效率。<br><img src="//bclnc.github.io/2018/11/20/ARM随记/哈佛执行.png" alt="哈佛"></p><h3 id="数据总线，地址总线和控制总线"><a href="#数据总线，地址总线和控制总线" class="headerlink" title="数据总线，地址总线和控制总线"></a>数据总线，地址总线和控制总线</h3><p><strong>数据总线（Data Bus）</strong>：</p><p>（1）数据总线是cpu和内存或其他期间之间数据交互的通道（双向）</p><p>（2）数据总线的宽度决定了cpu和外界的传输速度</p><p>（3）每条传输线一次只能传输一位二进制数，也就是说一次可传输数据大小为：2^n</p><p><strong>地址总线（Address Bus）</strong>：</p><p>（1）cpu通过地址总线来指定存储单元进行获取或存入（单向，从cpu传向外部设备或I/O端口）</p><p>（2）地址总线决定了cpu所能访问的最大内存空间的大小2^N,N为地址线数量.</p><p><strong>控制总线（Control Bus）</strong>：</p><p>（1）用来传送控制信号和时序信号（cpu向存储器或其他设备发送的读写信号，中断响应信号等，也有其他设备反馈给cpu的信号）</p><p>（）控制总线的宽度决定了cpu对外部设备的控制能力</p><h3 id="CPU的工作原理"><a href="#CPU的工作原理" class="headerlink" title="CPU的工作原理"></a>CPU的工作原理</h3><p>cpu从逻辑上分为三个部分，<code>控制单元</code>，<code>存储单元</code>和<code>运算单元</code>，这三部分由cpu内部总线连接起来。CPU从内存中一条一条地取出指令和相应的数据，按指令操作码的规定，对数据进行运算处理，直到程序执行完毕为止。</p><p><img src="//bclnc.github.io/2018/11/20/ARM随记/cpu.png" alt="cpu"></p><p><code>**控制单元**</code>:由指令寄存器IR(instruction register)、指令译码器ID(Instruction Decoder)和操作控制器OC(Operation Controller)等组成。根据用户的程序，从存储器中取出指令，放在指令寄存器IR中，然后通过ID译码器分析应该进行什么操作，最后通过控制操作器按时序向相应的不见发送控制信号。</p><p><code>**运算单元**</code>：接受控制单元的命令，进行算数操作。</p><p><code>**存储单元**</code>：包括cpu片内缓存和寄存器组，保存着待处理数据或已经处理过的数据。</p><p>经细化概括后，绘制图示：<br><img src="//bclnc.github.io/2018/11/20/ARM随记/cpu流程.png" alt="cpu"></p><p>总结一下，CPU的运行原理就是：<code>控制单元在时序脉冲的作用下，将指令计数器里所指向的指令地址(这个地址是在内存里的)送到地址总线上去，然后CPU将这个地址里的指令读到指令寄存器进行译码。对于执行指令过程中所需要用到的数据，会将数据地址也送到地址总线，然后CPU把数据读到CPU的内部存储单元(就是内部寄存器)暂存起来，最后命令运算单元对数据进行处理加工。周而复始，一直这样执行下去，天荒地老，海枯枝烂，直到停电。</code></p><h3 id="流水线"><a href="#流水线" class="headerlink" title="流水线"></a>流水线</h3><p>（1）什么是流水线？</p><p>　　为提高cpu利用率，加快执行速度，将指令分为若干阶段，可并行执行不同指令的不同阶段，从而多个指令同时执行。</p><p>（2）为什么要使用流水线？</p><p>　　提高cpu利用率，提升指令执行速度。</p><p>（3）5级流水线有哪些？</p><p>　　取址，译码/读寄存器、执行/计算有效地址、访问内存（读写）、结果写回寄存器。</p><p>（4）流水线阻塞的原因。</p><p>　　+ 结构相关：硬件资源不足，冲突。</p><p>　　+ 数据相关：一条指令需要前面某条指令的执行结果，而两者并行执行时。</p><p>　　+ 控制相关：有跳转语句，分支指令等。</p><h3 id="指令集介绍"><a href="#指令集介绍" class="headerlink" title="指令集介绍"></a>指令集介绍</h3><p>ARM公司设计的CPU支持多种指令集。</p><p>ARM指令集（32位）</p><p>thumb指令集（16位）<br>　<br>thumb指令集（32位）</p><p>ARM code对应的cpu状态为ARM State；Thumb code对应的cpu状态为thumb状态。如果程序的某一部分工作在ARM状态，一部分工作在Thumb状态，而这两段代码相互调用，则在编译的时候要加上-apcs/interwork选项。</p><h3 id="STM32寄存器介绍。"><a href="#STM32寄存器介绍。" class="headerlink" title="STM32寄存器介绍。"></a>STM32寄存器介绍。</h3><p>通用寄存器：</p><p>R0-R7:thumb和thumb-2均可访问<br>R8-R12:少量thumb可访问，thumb-2都可以访问。</p><p>专用寄存器：<br>R13（sp） R14（LR） R15(PC) xPSR</p><p>R13(SP) stack pointer 堆栈指针，用来保存堆栈的栈顶地址</p><p>　　“堆栈”——后进先出，使用的目的是为了支持函数调用，达到现场保护的目的。</p><p>用ｃ语言来描述，当程序进入某一函数时，操作形参，不改变实参的值，此时形参就是存储在栈区。假设过程Ａ执行过程中调用Ｂ，此时执行会操作寄存器，但是被操作的寄存器可能有Ａ中的重要数据，改变了重要数据，显然是不对的，这时候就需要现场保护了。将寄存器中的数据存储至内存，当调用结束再从内存中将数据加载（load）到寄存器中。</p><p>R14(LR)：linker register 链接寄存器</p><p>保存下一条指令，这指令时保存过程调用后返回的值。</p>]]></content>
     
     <summary type="html">
     
@@ -59,21 +59,21 @@
     
     </summary>
     
-      <category term="学习之路" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+      <category term="学习之路" scheme="http://bclnc.github.io/categories/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
     
     
-      <category term="ARM" scheme="http://yoursite.com/tags/ARM/"/>
+      <category term="ARM" scheme="http://bclnc.github.io/tags/ARM/"/>
     
   </entry>
   
   <entry>
     <title>笔试常见问题汇总</title>
-    <link href="http://yoursite.com/2018/10/31/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
-    <id>http://yoursite.com/2018/10/31/网络编程问题汇总/</id>
+    <link href="http://bclnc.github.io/2018/10/31/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
+    <id>http://bclnc.github.io/2018/10/31/网络编程问题汇总/</id>
     <published>2018-10-31T05:34:25.000Z</published>
     <updated>2018-12-06T03:37:41.191Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="网络编程的常见问题"><a href="#网络编程的常见问题" class="headerlink" title="网络编程的常见问题"></a>网络编程的常见问题</h2><h3 id="1、TCP和UDP的区别。"><a href="#1、TCP和UDP的区别。" class="headerlink" title="1、TCP和UDP的区别。"></a>1、TCP和UDP的区别。</h3><hr><p>这是一个超级常见的问题，只要考网络编程就会有，但是实际上想说全比较难，建议写成两行，对比观看就很清楚。</p><p>TCP：面向连接的可靠的字节流服务。用户数据稳定，有序的进行传输，占用资源也多。（关键词，连接，可靠，字节流，稳定有序，占资源）    　　　　</p><p>UDP:无连接，不可靠的用户数据报服务。数据尽可能的高效发送，会丢包，数据传输也可能无序。（关键词，无连接，不可靠，数据报，高效无序，资源损耗少）</p><h3 id="2、多线程是怎么实现同步的。"><a href="#2、多线程是怎么实现同步的。" class="headerlink" title="2、多线程是怎么实现同步的。"></a>2、多线程是怎么实现同步的。</h3><hr><p>这个问题可能是简答题（事件，信号量，互斥锁，），也可能是一个编程题，编程题最常见的就是写两个线程实现交替打印奇数和偶数。就以这个作为例子吧。首先写两个函数，一个打印奇数，一个打印偶数。（用一个全局变量，交替加1就行。）</p><h3 id="3、简述一下socket编程。"><a href="#3、简述一下socket编程。" class="headerlink" title="3、简述一下socket编程。"></a>3、简述一下socket编程。</h3><p>　　socket可以理解成ip+端口，或者说是一组接口。以tcp为例，服务端，创立套接字（socket），绑定ip和端口（bind），监听来自客户端的连接（listen），阻塞至有客户端进行连接请求（accept），连接后直接进行数据传输即可（send，recv）最后关闭套接字。而客户端则需要建立一个同ip及端口的套接字，向服务端发送连接请求（connect），成功后数据交互，关闭套接字。</p><h3 id="4、简述一下三次握手和四次挥手。"><a href="#4、简述一下三次握手和四次挥手。" class="headerlink" title="4、简述一下三次握手和四次挥手。"></a>4、简述一下三次握手和四次挥手。</h3><p>画图是特别好理解的，但是面试的话呢，就行不通了，这时候就得想办法组织语言了。</p><p><strong>tcp的三次握手</strong></p><p>第一次握手：客户端向服务端发起连接请求，同步位SYN=1,seq=x；客户端状态SYN-SENT(同步发送)。</p><p>第二次握手：此时服务端接收到请求，状态由listen变为SYN-RECV,并回复应答包SYN=1,ACK=1，ack=x+1，seq=y。</p><p>第三次握手：客户端接收到服务端的应答包，向服务端发送确认应答包，ACK=1,ack=y+1，seq=z.</p><p><img src="./网络编程问题汇总/三次握手.png" alt="图示"></p><p><strong>tcp的四次挥手</strong><br>先假设是客户端发起的中断连接请求，这样好描述一些。</p><p>第一次挥手：客户端发出连接释放请求FIN=1,seq=x，并停止数据发送，进入FIN-WAIT-1状态。</p><p>第二次挥手：服务端收到释放请求后发出确认请求报文段，ACK=1,ack=x+1,seq=y,并进入CLOSE-WAIT状态，此时A-B的连接中断。A接收到B的应答包后，进入FIN-WAIT-2状态。</p><p>第三次挥手：客户端没有要发送的数据后，向A发送中断连接请求包，FIN=1,ACK=1,ack=x+1，seq=z。B进入LAST-ACK状态，等待最后的确认。</p><p>第四次挥手：服务端收到中断连接包后，发出确认包，ACK=1,seq=y+1，ack=z+1，A进入TIME-WAIT状态，等待2ms后，进入close状态。<br><img src="./网络编程问题汇总/四次挥手.png" alt="图示"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="网络编程的常见问题"><a href="#网络编程的常见问题" class="headerlink" title="网络编程的常见问题"></a>网络编程的常见问题</h2><h3 id="1、TCP和UDP的区别。"><a href="#1、TCP和UDP的区别。" class="headerlink" title="1、TCP和UDP的区别。"></a>1、TCP和UDP的区别。</h3><hr><p>这是一个超级常见的问题，只要考网络编程就会有，但是实际上想说全比较难，建议写成两行，对比观看就很清楚。</p><p>TCP：面向连接的可靠的字节流服务。用户数据稳定，有序的进行传输，占用资源也多。（关键词，连接，可靠，字节流，稳定有序，占资源）    　　　　</p><p>UDP:无连接，不可靠的用户数据报服务。数据尽可能的高效发送，会丢包，数据传输也可能无序。（关键词，无连接，不可靠，数据报，高效无序，资源损耗少）</p><h3 id="2、多线程是怎么实现同步的。"><a href="#2、多线程是怎么实现同步的。" class="headerlink" title="2、多线程是怎么实现同步的。"></a>2、多线程是怎么实现同步的。</h3><hr><p>这个问题可能是简答题（事件，信号量，互斥锁，），也可能是一个编程题，编程题最常见的就是写两个线程实现交替打印奇数和偶数。就以这个作为例子吧。首先写两个函数，一个打印奇数，一个打印偶数。（用一个全局变量，交替加1就行。）</p><h3 id="3、简述一下socket编程。"><a href="#3、简述一下socket编程。" class="headerlink" title="3、简述一下socket编程。"></a>3、简述一下socket编程。</h3><p>　　socket可以理解成ip+端口，或者说是一组接口。以tcp为例，服务端，创立套接字（socket），绑定ip和端口（bind），监听来自客户端的连接（listen），阻塞至有客户端进行连接请求（accept），连接后直接进行数据传输即可（send，recv）最后关闭套接字。而客户端则需要建立一个同ip及端口的套接字，向服务端发送连接请求（connect），成功后数据交互，关闭套接字。</p><h3 id="4、简述一下三次握手和四次挥手。"><a href="#4、简述一下三次握手和四次挥手。" class="headerlink" title="4、简述一下三次握手和四次挥手。"></a>4、简述一下三次握手和四次挥手。</h3><p>画图是特别好理解的，但是面试的话呢，就行不通了，这时候就得想办法组织语言了。</p><p><strong>tcp的三次握手</strong></p><p>第一次握手：客户端向服务端发起连接请求，同步位SYN=1,seq=x；客户端状态SYN-SENT(同步发送)。</p><p>第二次握手：此时服务端接收到请求，状态由listen变为SYN-RECV,并回复应答包SYN=1,ACK=1，ack=x+1，seq=y。</p><p>第三次握手：客户端接收到服务端的应答包，向服务端发送确认应答包，ACK=1,ack=y+1，seq=z.</p><p><img src="//bclnc.github.io/2018/10/31/网络编程问题汇总/三次握手.png" alt="图示"></p><p><strong>tcp的四次挥手</strong><br>先假设是客户端发起的中断连接请求，这样好描述一些。</p><p>第一次挥手：客户端发出连接释放请求FIN=1,seq=x，并停止数据发送，进入FIN-WAIT-1状态。</p><p>第二次挥手：服务端收到释放请求后发出确认请求报文段，ACK=1,ack=x+1,seq=y,并进入CLOSE-WAIT状态，此时A-B的连接中断。A接收到B的应答包后，进入FIN-WAIT-2状态。</p><p>第三次挥手：客户端没有要发送的数据后，向A发送中断连接请求包，FIN=1,ACK=1,ack=x+1，seq=z。B进入LAST-ACK状态，等待最后的确认。</p><p>第四次挥手：服务端收到中断连接包后，发出确认包，ACK=1,seq=y+1，ack=z+1，A进入TIME-WAIT状态，等待2ms后，进入close状态。<br><img src="//bclnc.github.io/2018/10/31/网络编程问题汇总/四次挥手.png" alt="图示"></p>]]></content>
     
     <summary type="html">
     
@@ -84,17 +84,17 @@
     
     </summary>
     
-      <category term="学习之路" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+      <category term="学习之路" scheme="http://bclnc.github.io/categories/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
     
     
-      <category term="笔试常见问题汇总" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AF%95%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
+      <category term="笔试常见问题汇总" scheme="http://bclnc.github.io/tags/%E7%AC%94%E8%AF%95%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
     
   </entry>
   
   <entry>
     <title>字符串操作</title>
-    <link href="http://yoursite.com/2018/10/25/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C/"/>
-    <id>http://yoursite.com/2018/10/25/字符串操作/</id>
+    <link href="http://bclnc.github.io/2018/10/25/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C/"/>
+    <id>http://bclnc.github.io/2018/10/25/字符串操作/</id>
     <published>2018-10-24T16:19:43.000Z</published>
     <updated>2018-12-06T03:36:18.920Z</updated>
     
@@ -109,21 +109,21 @@
     
     </summary>
     
-      <category term="学习之路" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+      <category term="学习之路" scheme="http://bclnc.github.io/categories/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
     
     
-      <category term="字符串操作" scheme="http://yoursite.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C/"/>
+      <category term="字符串操作" scheme="http://bclnc.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C/"/>
     
   </entry>
   
   <entry>
     <title>链表思考</title>
-    <link href="http://yoursite.com/2018/10/19/%E9%93%BE%E8%A1%A8%E6%80%9D%E8%80%83/"/>
-    <id>http://yoursite.com/2018/10/19/链表思考/</id>
+    <link href="http://bclnc.github.io/2018/10/19/%E9%93%BE%E8%A1%A8%E6%80%9D%E8%80%83/"/>
+    <id>http://bclnc.github.io/2018/10/19/链表思考/</id>
     <published>2018-10-19T08:06:40.000Z</published>
     <updated>2018-12-06T03:37:32.286Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="链表思考"><a href="#链表思考" class="headerlink" title="链表思考"></a>链表思考</h1><p>链表题能充分的显示出做题者的思维能力，在这就总结一些网络上看到的链表题及个人解法。</p><h3 id="一、判断单链表是否有环。"><a href="#一、判断单链表是否有环。" class="headerlink" title="一、判断单链表是否有环。"></a>一、判断单链表是否有环。</h3><p>　　一个单链表若是有环，则无法从头遍历到尾，可以设置不同步的两个指针从头开始遍历，若相遇则代表有环。比如P1=P1-&gt;next，p2=p2-&gt;next-&gt;next。在拜读某位大牛的博客时，看到一篇文章。可以参考。<br><a href="http://ostermiller.org/find_loop_singly_linked_list.html" target="_blank" rel="noopener">http://ostermiller.org/find_loop_singly_linked_list.html</a></p><h3 id="二、判断两个单链表是否有交点，有的话，找出交点。"><a href="#二、判断两个单链表是否有交点，有的话，找出交点。" class="headerlink" title="二、判断两个单链表是否有交点，有的话，找出交点。"></a>二、判断两个单链表是否有交点，有的话，找出交点。</h3><p>　　判断是否相交有很多方法，想的最简单的就是两个链表如果相交，链表尾肯定是一样的，那么同时遍历到尾，看是否相等就好了。或者利用上面的办法，将其中一个链表的尾只想另一链表头，判断是否有环。画个图理解一下。<img src="链表思考/1.png" alt="图例"></p><p>　　两个链表，表头一样，那么直接找到了交点。如果不一样，假设第一个链表长度为len1，第二个为len2，然后找出长度较长的，让长度较长的链表指针向后移动|len1 - len2| (len1-len2的绝对值)，然后在开始遍历两个链表，判断节点是否相同即可。</p><h3 id="三、判断两个单链表是否带环，是的话，找出交点。"><a href="#三、判断两个单链表是否带环，是的话，找出交点。" class="headerlink" title="三、判断两个单链表是否带环，是的话，找出交点。"></a>三、判断两个单链表是否带环，是的话，找出交点。</h3><p>　　这是上述两题的合集，可以先用异步的办法判断是否有环。交点ｐ在环中，然后把环断开，P1=P,P2=P-&gt;next，p-&gt;next=NULL.现在有两个单链表了，一个从head开始，一个从P2开始。利用第二题的办法就能搞定了。</p><h3 id="四、删除单链表的某节点"><a href="#四、删除单链表的某节点" class="headerlink" title="四、删除单链表的某节点"></a>四、删除单链表的某节点</h3><p>　　删除节点不是很简单吗，遍历链表，建立一个循环来找到这个节点r，每次没找到都保存一下上一节点pre，删除的时候只需要pre-&gt;next=r-&gt;next,然后r-&gt;next=NULL,free（r），r=NULL。</p><p>但是这一点都不cool，还要找到上一节点，还得遍历，还得有头节点。很复杂。那么，我们可不可以鸠占鹊巢呢，我们有这个节点p，有这个节点p的下一个节点p-&gt;next,那么，我们把p-&gt;next的数据全部拷贝到p，然后p-&gt;next=p-&gt;next-&gt;next,再干掉p-&gt;next。成功实现功能。<br><img src="链表思考/2.png" alt="图例"></p><h3 id="五，在单链表的某节点前插入节点"><a href="#五，在单链表的某节点前插入节点" class="headerlink" title="五，在单链表的某节点前插入节点"></a>五，在单链表的某节点前插入节点</h3><p>　　常规办法，遍历找到某节点的前节点，然后前节点next指向新节点，新节点next指向某节点。</p><p>　　cool点的办法，鸠占鹊巢式，某节点Ｐ后面插入一个新节点，然后把Ｐ的数据复制到新节点中，再给Ｐ赋值（原本新节点的值）。</p><h3 id="六、删除单链表的倒数第k个节点。"><a href="#六、删除单链表的倒数第k个节点。" class="headerlink" title="六、删除单链表的倒数第ｋ个节点。"></a>六、删除单链表的倒数第ｋ个节点。</h3><p>　　p1指向头节点，P2指向头节点后的第k个节点，（写个for循环，p2从头开始，每次循环指向下一个），两个p同时向后步进，直到p2到链表尾。 此时p1就是要删除的节点了，再鸠占鹊巢式删除p1,收工。</p><h3 id="七、链表排序"><a href="#七、链表排序" class="headerlink" title="七、链表排序"></a>七、链表排序</h3><p>　　简单介绍一个排序，快速排序。其主要思想是找一个标杆，这个标杆左边的数据都比它小，右边的都比它大。此时左右两边又成了新的无序链表，对左右两边的链表再递归调用这个函数。实现功能。</p><pre><code>//=============快速排序====================//交换节点void swap(node * a, node * b){    int temp = a -&gt; val;    a -&gt; val = b -&gt; val;    b -&gt; val = temp;}//求中间点node * partion(node * start, node * end){    if(start == end || start -&gt; next == end)    {           return start;    }       //取第一个元素作为基准元素    node * p = start, * q = start, * refer = start;    //从start开始向后进行一次遍历(因为是单链表，无法按从左右向中间遍历的方法)    while(p != end)    {           if(q -&gt; val &lt; refer -&gt; val)         {               p =  p -&gt; next;            swap(p, q);         }           q = q -&gt; next;    }       swap(p, refer);    return p;}//递归void quick_sort(node * start, node * end){    if(start == end || start -&gt; next == end)    {           return;    }       node * mid = partion(start, end);    quick_sort(start, mid);    quick_sort(mid -&gt; next, end);}void quickSort(list mylist){    if((mylist -&gt; next == NULL) || (mylist -&gt; next -&gt; next == NULL))    {        return;    }    node * start = mylist -&gt; next;    node * end = NULL;    quick_sort(start, end);}</code></pre><h3 id="八、链表倒置"><a href="#八、链表倒置" class="headerlink" title="八、链表倒置"></a>八、链表倒置</h3><p>很不幸，在写这篇博客前，并没有好好整理关于链表的知识，导致笔试的时候遇见这题，思维异常的混乱，虽然成功的完成了，但是很多细节没有注意，涂改过多，描述也不清晰，导致了笔试的失败（思路差，描述乱，涂改多，以后尽量的把思路写草稿纸上再填写到答题纸上）。好吧，废话不多说，开始介绍第八个问题，链表倒置。</p><p>　　一开始，我的思路是，建立一个循环，循环的内容是：每次找到原链表的倒数第一个数和倒数第二个数，把它链接到一个新的链表上，然后把原链表的最后一个数删除。直到原链表空。</p><p>　　这样想一点都不cool，而且会给人一种很差劲的感觉，并且，实现起来比较复杂。有一个很好的思想，叫递归。脑子里有一个递归的概念，重复利用。用的时候想成就只有两个数，要做的事就是把这第一个数node，插到最后一个数temp的后面，因为只有两个数，所以，temp=node-&gt;next，所以要做的事就是，temp-&gt;next=node,node-&gt;next=NULL。递归调用这个函数。</p><pre><code>    ListNode* reverse(ListNode *node){    if(node==NULL)    {        return node;    }    if(node-&gt;next==NULL)//跳出    {        return node;    }    ListNode *preNode=reverse(node-&gt;next);    ListNode *temp=node-&gt;next;    temp-&gt;next=node;    node-&gt;next=NULL;    return preNode;}</code></pre><p>其实不递归也能很cool，写一个循环，循环里prev是node的前驱（第一个node没前驱，所以prev的初值为NULL），每次用temp保存node的后继，然后让node的next指向prev（实现了倒序），此时，这个新的关系成为了新的一个链表，与原链表无关。prev成为下一个node的前驱，也就是现在的node，temp成为新的node。继续循环，直到尾节点结束。</p><pre><code>ListNode *Reverse(ListNode *node){    if(node==NULL)    {      return node;    }    ListNode *prev=NULL;    while(node-&gt;next!=NULL)    {      ListNode *tmp=node-&gt;next;      node-&gt;next=prev;      prev=node;      node=tmp;    }}</code></pre><h3 id="九、有序列表合并"><a href="#九、有序列表合并" class="headerlink" title="九、有序列表合并"></a>九、有序列表合并</h3><p>　　常规思路，肯定是慢慢比较咯，取出链表ａ的值，再取出ｂ的值，比较一下，小的插入到新的链表中。很简单嘛，ｃｏｏｌ一点，这种重复的东西，可以递归嘛。</p><p>我们要做的事情是什么呢，找到ａｂ链表中更小的那个数，赋值给一个新的节点result，并返回这个节点。result节点的下一个指向下一个新节点，也就是这个递归函数了，知道ab其中一个为空。</p><pre><code>struct node* result = NULL;    if(a == NULL)        return (b);    else if(b == NULL)        return (a);    if(a-&gt;data &lt;= b-&gt;data)    {        result = a;        result-&gt;next = SortedMerge(a-&gt;next, b);    }    else    {        result = b;        result-&gt;next = SortedMerge(a, b-&gt;next);    }    return (result);</code></pre><h3 id="十、找出链表最中间的数"><a href="#十、找出链表最中间的数" class="headerlink" title="十、找出链表最中间的数"></a>十、找出链表最中间的数</h3><p>龟兔赛跑，兔速度是龟的两倍，当兔跑到终点时，龟就在最中间啦。</p><blockquote><p>p1=p2=head;<br>p1=p1-&gt;next;p2=p2-&gt;next-&gt;next;</p></blockquote><p>文终，希望博主下次看自己博客的时候已经拿到offer了吧。加油~</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="链表思考"><a href="#链表思考" class="headerlink" title="链表思考"></a>链表思考</h1><p>链表题能充分的显示出做题者的思维能力，在这就总结一些网络上看到的链表题及个人解法。</p><h3 id="一、判断单链表是否有环。"><a href="#一、判断单链表是否有环。" class="headerlink" title="一、判断单链表是否有环。"></a>一、判断单链表是否有环。</h3><p>　　一个单链表若是有环，则无法从头遍历到尾，可以设置不同步的两个指针从头开始遍历，若相遇则代表有环。比如P1=P1-&gt;next，p2=p2-&gt;next-&gt;next。在拜读某位大牛的博客时，看到一篇文章。可以参考。<br><a href="http://ostermiller.org/find_loop_singly_linked_list.html" target="_blank" rel="noopener">http://ostermiller.org/find_loop_singly_linked_list.html</a></p><h3 id="二、判断两个单链表是否有交点，有的话，找出交点。"><a href="#二、判断两个单链表是否有交点，有的话，找出交点。" class="headerlink" title="二、判断两个单链表是否有交点，有的话，找出交点。"></a>二、判断两个单链表是否有交点，有的话，找出交点。</h3><p>　　判断是否相交有很多方法，想的最简单的就是两个链表如果相交，链表尾肯定是一样的，那么同时遍历到尾，看是否相等就好了。或者利用上面的办法，将其中一个链表的尾只想另一链表头，判断是否有环。画个图理解一下。<img src="//bclnc.github.io/2018/10/19/链表思考/1.png" alt="图例"></p><p>　　两个链表，表头一样，那么直接找到了交点。如果不一样，假设第一个链表长度为len1，第二个为len2，然后找出长度较长的，让长度较长的链表指针向后移动|len1 - len2| (len1-len2的绝对值)，然后在开始遍历两个链表，判断节点是否相同即可。</p><h3 id="三、判断两个单链表是否带环，是的话，找出交点。"><a href="#三、判断两个单链表是否带环，是的话，找出交点。" class="headerlink" title="三、判断两个单链表是否带环，是的话，找出交点。"></a>三、判断两个单链表是否带环，是的话，找出交点。</h3><p>　　这是上述两题的合集，可以先用异步的办法判断是否有环。交点ｐ在环中，然后把环断开，P1=P,P2=P-&gt;next，p-&gt;next=NULL.现在有两个单链表了，一个从head开始，一个从P2开始。利用第二题的办法就能搞定了。</p><h3 id="四、删除单链表的某节点"><a href="#四、删除单链表的某节点" class="headerlink" title="四、删除单链表的某节点"></a>四、删除单链表的某节点</h3><p>　　删除节点不是很简单吗，遍历链表，建立一个循环来找到这个节点r，每次没找到都保存一下上一节点pre，删除的时候只需要pre-&gt;next=r-&gt;next,然后r-&gt;next=NULL,free（r），r=NULL。</p><p>但是这一点都不cool，还要找到上一节点，还得遍历，还得有头节点。很复杂。那么，我们可不可以鸠占鹊巢呢，我们有这个节点p，有这个节点p的下一个节点p-&gt;next,那么，我们把p-&gt;next的数据全部拷贝到p，然后p-&gt;next=p-&gt;next-&gt;next,再干掉p-&gt;next。成功实现功能。<br><img src="//bclnc.github.io/2018/10/19/链表思考/2.png" alt="图例"></p><h3 id="五，在单链表的某节点前插入节点"><a href="#五，在单链表的某节点前插入节点" class="headerlink" title="五，在单链表的某节点前插入节点"></a>五，在单链表的某节点前插入节点</h3><p>　　常规办法，遍历找到某节点的前节点，然后前节点next指向新节点，新节点next指向某节点。</p><p>　　cool点的办法，鸠占鹊巢式，某节点Ｐ后面插入一个新节点，然后把Ｐ的数据复制到新节点中，再给Ｐ赋值（原本新节点的值）。</p><h3 id="六、删除单链表的倒数第k个节点。"><a href="#六、删除单链表的倒数第k个节点。" class="headerlink" title="六、删除单链表的倒数第ｋ个节点。"></a>六、删除单链表的倒数第ｋ个节点。</h3><p>　　p1指向头节点，P2指向头节点后的第k个节点，（写个for循环，p2从头开始，每次循环指向下一个），两个p同时向后步进，直到p2到链表尾。 此时p1就是要删除的节点了，再鸠占鹊巢式删除p1,收工。</p><h3 id="七、链表排序"><a href="#七、链表排序" class="headerlink" title="七、链表排序"></a>七、链表排序</h3><p>　　简单介绍一个排序，快速排序。其主要思想是找一个标杆，这个标杆左边的数据都比它小，右边的都比它大。此时左右两边又成了新的无序链表，对左右两边的链表再递归调用这个函数。实现功能。</p><pre><code>//=============快速排序====================//交换节点void swap(node * a, node * b){    int temp = a -&gt; val;    a -&gt; val = b -&gt; val;    b -&gt; val = temp;}//求中间点node * partion(node * start, node * end){    if(start == end || start -&gt; next == end)    {           return start;    }       //取第一个元素作为基准元素    node * p = start, * q = start, * refer = start;    //从start开始向后进行一次遍历(因为是单链表，无法按从左右向中间遍历的方法)    while(p != end)    {           if(q -&gt; val &lt; refer -&gt; val)         {               p =  p -&gt; next;            swap(p, q);         }           q = q -&gt; next;    }       swap(p, refer);    return p;}//递归void quick_sort(node * start, node * end){    if(start == end || start -&gt; next == end)    {           return;    }       node * mid = partion(start, end);    quick_sort(start, mid);    quick_sort(mid -&gt; next, end);}void quickSort(list mylist){    if((mylist -&gt; next == NULL) || (mylist -&gt; next -&gt; next == NULL))    {        return;    }    node * start = mylist -&gt; next;    node * end = NULL;    quick_sort(start, end);}</code></pre><h3 id="八、链表倒置"><a href="#八、链表倒置" class="headerlink" title="八、链表倒置"></a>八、链表倒置</h3><p>很不幸，在写这篇博客前，并没有好好整理关于链表的知识，导致笔试的时候遇见这题，思维异常的混乱，虽然成功的完成了，但是很多细节没有注意，涂改过多，描述也不清晰，导致了笔试的失败（思路差，描述乱，涂改多，以后尽量的把思路写草稿纸上再填写到答题纸上）。好吧，废话不多说，开始介绍第八个问题，链表倒置。</p><p>　　一开始，我的思路是，建立一个循环，循环的内容是：每次找到原链表的倒数第一个数和倒数第二个数，把它链接到一个新的链表上，然后把原链表的最后一个数删除。直到原链表空。</p><p>　　这样想一点都不cool，而且会给人一种很差劲的感觉，并且，实现起来比较复杂。有一个很好的思想，叫递归。脑子里有一个递归的概念，重复利用。用的时候想成就只有两个数，要做的事就是把这第一个数node，插到最后一个数temp的后面，因为只有两个数，所以，temp=node-&gt;next，所以要做的事就是，temp-&gt;next=node,node-&gt;next=NULL。递归调用这个函数。</p><pre><code>    ListNode* reverse(ListNode *node){    if(node==NULL)    {        return node;    }    if(node-&gt;next==NULL)//跳出    {        return node;    }    ListNode *preNode=reverse(node-&gt;next);    ListNode *temp=node-&gt;next;    temp-&gt;next=node;    node-&gt;next=NULL;    return preNode;}</code></pre><p>其实不递归也能很cool，写一个循环，循环里prev是node的前驱（第一个node没前驱，所以prev的初值为NULL），每次用temp保存node的后继，然后让node的next指向prev（实现了倒序），此时，这个新的关系成为了新的一个链表，与原链表无关。prev成为下一个node的前驱，也就是现在的node，temp成为新的node。继续循环，直到尾节点结束。</p><pre><code>ListNode *Reverse(ListNode *node){    if(node==NULL)    {      return node;    }    ListNode *prev=NULL;    while(node-&gt;next!=NULL)    {      ListNode *tmp=node-&gt;next;      node-&gt;next=prev;      prev=node;      node=tmp;    }}</code></pre><h3 id="九、有序列表合并"><a href="#九、有序列表合并" class="headerlink" title="九、有序列表合并"></a>九、有序列表合并</h3><p>　　常规思路，肯定是慢慢比较咯，取出链表ａ的值，再取出ｂ的值，比较一下，小的插入到新的链表中。很简单嘛，ｃｏｏｌ一点，这种重复的东西，可以递归嘛。</p><p>我们要做的事情是什么呢，找到ａｂ链表中更小的那个数，赋值给一个新的节点result，并返回这个节点。result节点的下一个指向下一个新节点，也就是这个递归函数了，知道ab其中一个为空。</p><pre><code>struct node* result = NULL;    if(a == NULL)        return (b);    else if(b == NULL)        return (a);    if(a-&gt;data &lt;= b-&gt;data)    {        result = a;        result-&gt;next = SortedMerge(a-&gt;next, b);    }    else    {        result = b;        result-&gt;next = SortedMerge(a, b-&gt;next);    }    return (result);</code></pre><h3 id="十、找出链表最中间的数"><a href="#十、找出链表最中间的数" class="headerlink" title="十、找出链表最中间的数"></a>十、找出链表最中间的数</h3><p>龟兔赛跑，兔速度是龟的两倍，当兔跑到终点时，龟就在最中间啦。</p><blockquote><p>p1=p2=head;<br>p1=p1-&gt;next;p2=p2-&gt;next-&gt;next;</p></blockquote><p>文终，希望博主下次看自己博客的时候已经拿到offer了吧。加油~</p>]]></content>
     
     <summary type="html">
     
@@ -135,17 +135,17 @@
     
     </summary>
     
-      <category term="学习之路" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+      <category term="学习之路" scheme="http://bclnc.github.io/categories/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
     
     
-      <category term="数据结构" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="http://bclnc.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
   <entry>
     <title>linux安装arm-linux-gcc交叉编译环境</title>
-    <link href="http://yoursite.com/2018/10/15/linux%E5%AE%89%E8%A3%85arm-linux-gcc%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/"/>
-    <id>http://yoursite.com/2018/10/15/linux安装arm-linux-gcc交叉编译环境/</id>
+    <link href="http://bclnc.github.io/2018/10/15/linux%E5%AE%89%E8%A3%85arm-linux-gcc%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/"/>
+    <id>http://bclnc.github.io/2018/10/15/linux安装arm-linux-gcc交叉编译环境/</id>
     <published>2018-10-15T13:10:14.000Z</published>
     <updated>2018-12-06T03:37:01.175Z</updated>
     
@@ -160,17 +160,17 @@
     
     </summary>
     
-      <category term="学习之路" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+      <category term="学习之路" scheme="http://bclnc.github.io/categories/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
     
     
-      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+      <category term="linux" scheme="http://bclnc.github.io/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>c++学习概述</title>
-    <link href="http://yoursite.com/2018/10/11/c-%E5%AD%A6%E4%B9%A0%E6%A6%82%E8%BF%B0/"/>
-    <id>http://yoursite.com/2018/10/11/c-学习概述/</id>
+    <link href="http://bclnc.github.io/2018/10/11/c-%E5%AD%A6%E4%B9%A0%E6%A6%82%E8%BF%B0/"/>
+    <id>http://bclnc.github.io/2018/10/11/c-学习概述/</id>
     <published>2018-10-11T02:46:48.000Z</published>
     <updated>2018-12-06T03:36:37.885Z</updated>
     
@@ -186,17 +186,17 @@
     
     </summary>
     
-      <category term="学习之路" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+      <category term="学习之路" scheme="http://bclnc.github.io/categories/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
     
     
-      <category term="c++" scheme="http://yoursite.com/tags/c/"/>
+      <category term="c++" scheme="http://bclnc.github.io/tags/c/"/>
     
   </entry>
   
   <entry>
     <title>学习之路——进程与线程（三）</title>
-    <link href="http://yoursite.com/2018/09/28/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF%E2%80%94%E2%80%94%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/"/>
-    <id>http://yoursite.com/2018/09/28/学习之路——进程间通信/</id>
+    <link href="http://bclnc.github.io/2018/09/28/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF%E2%80%94%E2%80%94%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/"/>
+    <id>http://bclnc.github.io/2018/09/28/学习之路——进程间通信/</id>
     <published>2018-09-28T12:25:38.000Z</published>
     <updated>2018-12-06T03:38:08.728Z</updated>
     
@@ -204,43 +204,43 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;进程间通信&quot;&gt;&lt;a href=&quot;#进程间通信&quot; class=&quot;headerlink&quot; title=&quot;进程间通信&quot;&gt;&lt;/a&gt;进程间通信&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;p style=&quot;background-color:rgb(125,255,0)&quot;&gt;　　进程间通信有：管道；信号；消息队列；信号量，共享内存，socket通信；&lt;br&gt;
+      &lt;h1 id=&quot;进程间通信&quot;&gt;&lt;a href=&quot;#进程间通信&quot; class=&quot;headerlink&quot; title=&quot;进程间通信&quot;&gt;&lt;/a&gt;进程间通信&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;p style=&quot;background-color:rgb(125,255,0)&quot;&gt;　　进程间通信有：管道；信号；消息队列；信号量，共享内存，socket通信；&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
-      <category term="学习之路" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+      <category term="学习之路" scheme="http://bclnc.github.io/categories/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
     
     
-      <category term="进程与线程" scheme="http://yoursite.com/tags/%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/"/>
+      <category term="进程与线程" scheme="http://bclnc.github.io/tags/%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>学习之路 —— 进程与线程　　（二）</title>
-    <link href="http://yoursite.com/2018/09/20/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF%E2%80%94%E2%80%94%E8%BF%9B%E7%A8%8B/"/>
-    <id>http://yoursite.com/2018/09/20/学习之路——进程/</id>
+    <link href="http://bclnc.github.io/2018/09/20/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF%E2%80%94%E2%80%94%E8%BF%9B%E7%A8%8B/"/>
+    <id>http://bclnc.github.io/2018/09/20/学习之路——进程/</id>
     <published>2018-09-20T05:58:20.000Z</published>
     <updated>2018-12-06T03:38:01.211Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="一、进程函数"><a href="#一、进程函数" class="headerlink" title="一、进程函数"></a>一、进程函数</h1><p></p><p style="background-color:rgb(125,255,0)">　　进程——进程是独立功能的程序关于某个数据集合上的一次运行活动！<br><a id="more"></a></p><h2 id="1-1-创建进程函数"><a href="#1-1-创建进程函数" class="headerlink" title="1.1 创建进程函数"></a>1.1 创建进程函数</h2><pre><code>头文件： #include &lt;unistd.h&gt;原型： pid_t fork(void);功能：创建一个进程 返回值：子进程 返回0 父进程 返回子进程的ID </code></pre><p>fork简介：fork函数创建了一个新的进程，新的进程即子进程将复制父进程所有的数据与指令，子进程拥有独立的内存空间以及系统资源。</p><p>问题一：fork 成功后子进程从哪里开始执行？</p><p>　　从调用完fork后面的语句处开始执行！</p><p>问题二：父子进程的执行顺序是怎样的？</p><p>　　由时间片轮转调度决定，没有固定的执行顺序。</p><p>问题三：什么是时间片？</p><p>　　时间片：为实现并发，每个进程被分配一个时间段，称作它的时间片，即该进程允许运行的时间。若时间片结束进程还在运行，则cpu将被剥夺并分配给另一个进程，若进程在时间片结束前阻塞或结束，则cpu当即切换。系统内进程按时间顺序排成一个队列，每次调度，系统都将cpu分配给队内首进程，此进程用完它的时间片后被移动到队列的末尾，接着下一个执行。<br>　　时间片过短：导致过多的进程切换，降低效率。<br>　　时间片过长：引起对短的交互请求响应变差。</p><h2 id="1-2-获取标识码函数"><a href="#1-2-获取标识码函数" class="headerlink" title="1.2 获取标识码函数"></a>1.2 获取标识码函数</h2><pre><code>头文件： #include &lt;unistd.h&gt;        #include &lt;sys/types.h&gt;原型： pid_t getpid(void); //获取本身ID       pid_t getppid(void);//获取父进程ID 功能：获取进程号 返回值：返回所获取的PID</code></pre><h2 id="1-3-进程退出函数"><a href="#1-3-进程退出函数" class="headerlink" title="1.3 进程退出函数"></a>1.3 进程退出函数</h2><p>exit:</p><pre><code>头文件：#include&lt;stdlib.h&gt;原型：void exit(int status)；功能：用来退出进程，进行清除操作参数： 退出码，stasus用来存返回值。</code></pre><p>_exit:</p><pre><code>头文件：#include&lt;unistd.h&gt;原型：void _exit(int status);功能：用来退出进程，立即退出参数： 退出码，stasus用来存返回值。</code></pre><p>_Exit:</p><pre><code>头文件：#include&lt;stdlib.h&gt;原型：void _Exit(int status);功能：用来退出进程，立即退出参数： 退出码，stasus用来存返回值。</code></pre><p>进程死亡：自杀与被杀。自杀：自然死亡与调用退出函数。<br>思考：<br>问题一：return和exit有什么区别？</p><p>a.exit是一个函数，有参数。exit执行完后把控制权交给系统。 </p><p>b.return是函数执行完后的返回。renturn执行完后把控制权交给调用函数。</p><p>问题二：exit与_exit有什么异同？</p><p>相同点：都是用来终止进程的，执行这两个函数时，系统无条件终止所有操作，清除数据，终止进程运行。<br>不同点：_exit执行后立即返回给内核，exit先执行一些清除操作再将控制权交给内核。<br>清除操作：刷新流（stdin，stdout …）,将缓冲区的数据处理完成。</p><p>c.通过实例来区别<br>实例1：exit.c</p><blockquote><p>1 #include “stdio.h”<br>2 #include “stdlib.h”<br>3<br>4 int main()<br>5 {<br>6 printf(“using exit—-\n”);<br>7 printf(“This is the content in buffer”);<br>8 exit(0);<br>9 } </p></blockquote><p>执行结果：</p><blockquote><p>using exit—-<br>This is the content in buffer</p></blockquote><p>实例2：_exit.c</p><blockquote><p>1 #include”stdio.h”<br>2 #include”unistd.h”<br>3<br>4 int main(void)<br>5 {<br>6 printf(“using _exit–\n”);<br>7 printf(“This is the content in buffer”);<br>8 _exit(0);<br>9 }</p></blockquote><p>执行结果：</p><blockquote><p>using exit—-</p></blockquote><p>printf函数就是使用缓冲I/O的方式，该函数在遇到“\n”换行符时自动的从缓冲区中将记录读出。所以exit()将缓冲区的数据写完后才退出，而_exit()函数直接退出。 </p><h2 id="1-4等待子进程结束函数"><a href="#1-4等待子进程结束函数" class="headerlink" title="1.4等待子进程结束函数"></a>1.4等待子进程结束函数</h2><p>wait:</p><pre><code>头文件：#include &lt;sys/types.h&gt;       #include &lt;sys/wait.h&gt;原型：pid_t wait(int *status);功能：等待任意一个子进程状态改变参数： 退出码，stasus用来存子进程返回值。返回值：成功返回 等待到的子进程进程号    失败返回-1 同时errno被设置</code></pre><p>waitpid    :</p><pre><code>头文件：#include &lt;sys/types.h&gt;       #include &lt;sys/wait.h&gt;原型：pid_t waitpid(pid_t pid, int *status, int options);功能：等待任意一个子进程状态改变参数： pid :指定要等待的进程号     stasus :用来存子进程返回值。    options :等待模式：0 表示默认选项 阻塞等待                WNOHANG 非阻塞等待 假设此时没有子进程退出就立刻返回 不用等待！返回值：成功返回 等待到的子进程进程号       失败返回-1 同时errno被设置</code></pre><p>退出码解析：status用来保存子进程的退出状态的信息，用以下宏来解析。</p><p>WIFEXITED（status） ：如果为真，子进程正常退出。</p><p>WEXITSTATUS (status) ：返回子进程的退出码<br>正常退出 main函数的返回值或者exit _Exit _exit 的参数<br>WIFSIGNALED （status） ：如果为真则表示这个子进程是被一个信号干掉的！<br>WCONTINUED （status）  ：如果为真表示 这个子进程是被信号唤醒的！</p><h1 id="二、exec函数族"><a href="#二、exec函数族" class="headerlink" title="二、exec函数族"></a>二、exec函数族</h1><p></p><p style="background-color:rgb(125,255,0)">　　让另外一个程序文件的数据和指令集合 替换 之前拷贝的数据指令！注意这里的替换只能替换 用户数据和指令 系统数据无法替换！</p><p>如图所示：<img src="学习之路——进程/exec函数族.png" alt="进程状态"></p><h2 id="1-1综述exec函数族"><a href="#1-1综述exec函数族" class="headerlink" title="1.1综述exec函数族"></a>1.1综述exec函数族</h2><pre><code>&gt;头文件：#include &lt;unistd.h&gt;原型：#include &lt;unistd.h&gt;extern char **environ;int execl(const char *path,const char *arg, ...);int execlp(const char *file, const char *arg, ...);int execle(const char *path,const char *arg,..., char * const envp[]);int execv(const char *path,char *const argv[]);int execvp(const char *file, char *const argv[]);int execve(const char *file,char *const argv[],char *const envp[]);功能： exec函数族装入并运行程序path/file，并将参数arg0(arg1, arg2, argv[], envp[])传递给子程序参数： path :要运行的程序       arg  :存放参数。返回值：出错返回-1，</code></pre><p>l：list：希望接收到以逗号分隔的参数列表，列表以NULL指针作为结束标志。<br>　　　　　把要执行的那个程序文件的参数，以list的形式输出。<br>v：vector：希望接收到一个以NULL结尾的字符串数组的指针（char* argv[]）<br>　　    　　　把要执行的程序文件的参数 以向量即数组的方式出现<br>p:path：环境变量：整个系统中任何一个进程都可以访问的变量。<br>　　　　　一个以NULL结尾的字符串数组指针，函数可以DOS的PATH变量查找子程序文件<br>e:envp：函数传递指定参数envp，允许改变子进程的环境，无后缀e时，子进程使用当前程序的环境。<br>是不是看的头皮发麻？实践出真知。实例如下：</p><h2 id="2-1-头文件及字符串数组指针的声明"><a href="#2-1-头文件及字符串数组指针的声明" class="headerlink" title="2.1 头文件及字符串数组指针的声明"></a>2.1 头文件及字符串数组指针的声明</h2><pre><code>#include &lt;stdio.h&gt;#include &lt;stdlib.h&gt;#include &lt;unistd.h&gt;#include &lt;string.h&gt;#include &lt;errno.h&gt;int main(int argc, char *argv[]){  //以NULL结尾的字符串数组的指针，适合包含v的exec函数参数  char *arg[] = {&quot;ls&quot;, &quot;-a&quot;, NULL};｝</code></pre><h2 id="2-2-创建子进程并调用函数execl"><a href="#2-2-创建子进程并调用函数execl" class="headerlink" title="2.2 创建子进程并调用函数execl"></a>2.2 创建子进程并调用函数execl</h2><ul><li><p>execl 中希望接收以逗号分隔的参数列    表，并以NULL指针为结束标志</p><p>  if( fork() == 0 )<br>  {</p><pre><code>// in clild printf( &quot;1------------execl------------\n&quot; );if( execl( &quot;/bin/ls&quot;, &quot;ls&quot;,&quot;-a&quot;, NULL ) == -1 ){  perror( &quot;execl error &quot; );  exit(1);}</code></pre><p>  }</p></li></ul><h2 id="2-3-创建子进程并调用函数execv"><a href="#2-3-创建子进程并调用函数execv" class="headerlink" title="2.3 创建子进程并调用函数execv"></a>2.3 创建子进程并调用函数execv</h2><ul><li>execv中希望接收一个以NULL结尾的字符串数组的指针<pre><code>if( fork() == 0 ){  printf(&quot;2------------execv------------\n&quot;);  if( execv( &quot;/bin/ls&quot;,arg) &lt; 0)  {    perror(&quot;execv error &quot;);    exit(1);  }}</code></pre></li></ul><h2 id="2-4-创建子进程并调用-execlp"><a href="#2-4-创建子进程并调用-execlp" class="headerlink" title="2.4 创建子进程并调用 execlp"></a>2.4 创建子进程并调用 execlp</h2><ul><li>l 　希望接收以逗号分隔的参数列表，列表以NULL指针作为结束标志</li><li><p>p　是一个以NULL结尾的字符串数组指针，函数可以DOS的PATH变量查找子程序文件</p><pre><code>if( fork() == 0 ){  printf(&quot;3------------execlp------------\n&quot;);  if( execlp( &quot;ls&quot;, &quot;ls&quot;, &quot;-a&quot;, NULL ) &lt; 0 )  {    perror( &quot;execlp error &quot; );    exit(1);  }}</code></pre></li></ul><h2 id="2-５-创建子里程并调用execvp"><a href="#2-５-创建子里程并调用execvp" class="headerlink" title="2.５ 创建子里程并调用execvp"></a>2.５ 创建子里程并调用execvp</h2><ul><li>v 　望接收到一个以NULL结尾的字符串数    组的指针</li><li><p>p　 是一个以NULL结尾的字符串数组指针，函数可以DOS的PATH变量查找子程序文件</p><pre><code> if( fork() == 0 ){   printf(&quot;4------------execvp------------\n&quot;);   if( execvp( &quot;ls&quot;, arg ) &lt; 0 )   {     perror( &quot;execvp error &quot; );     exit( 1 );   }</code></pre><p>   }</p></li></ul><h2 id="2-6-创建子进程并调用execle"><a href="#2-6-创建子进程并调用execle" class="headerlink" title="2.6 创建子进程并调用execle"></a>2.6 创建子进程并调用execle</h2><ul><li>l 　希望接收以逗号分隔的参数列表，列表以NULL指针作为结束标志</li><li><p>e　函数传递指定参数envp，允许改变子进程的环境，无后缀e时，子进程使用当前程序的环境</p><p>  if( fork() == 0 )<br>  {</p><pre><code>printf(&quot;5------------execle------------\n&quot;);if( execle(&quot;/bin/ls&quot;, &quot;ls&quot;, &quot;-a&quot;, NULL, NULL) == -1 ){  perror(&quot;execle error &quot;);  exit(1);}</code></pre><p>  }</p></li></ul><h2 id="2-7-创建子进程并调用execve"><a href="#2-7-创建子进程并调用execve" class="headerlink" title="2.7 创建子进程并调用execve"></a>2.7 创建子进程并调用execve</h2><ul><li>v 　希望接收到一个以NULL结尾的字符串数组的指针</li><li><p>e 　函数传递指定参数envp，允许改变子进程的环境，无后缀e时，子进程使用当前程序的环境</p><pre><code>if( fork() == 0 ){  printf(&quot;6------------execve-----------\n&quot;);  if( execve( &quot;/bin/ls&quot;, arg, NULL ) == 0)  {   perror(&quot;execve error &quot;);    exit(1);  }}</code></pre></li></ul><h2 id="2-8-类exec函数"><a href="#2-8-类exec函数" class="headerlink" title="2.8 类exec函数"></a>2.8 类exec函数</h2><p>system：用来执行指定的命令或程序<br>    &gt;头文件:#include &lt;stdlib.h&gt;<br>     原型：int system(const char *command);<br>    参数： command 要执行的指令 或者程序<br>    返回值  失败  返回 -1<br>           成功  除此以外进程的 退出码！</p><p>实例：<br>    &gt;cmd[256];<br>    sprintf(cmd,”%s %s %s”,”./hello”,”1”,”2”)<br>    system(cmd);<br>总结进程：<br>    进程 就是向操作系统申请资源的最小单位！<br>    通过进程可实现并发！因为 进程就实现并发的一种机制！<br>    进程的地址空间相互独立 创建一个进程时其会拷贝父进程的所有数据和指令！<br>    进程间的数据独立！<br>文终。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="一、进程函数"><a href="#一、进程函数" class="headerlink" title="一、进程函数"></a>一、进程函数</h1><p></p><p style="background-color:rgb(125,255,0)">　　进程——进程是独立功能的程序关于某个数据集合上的一次运行活动！<br><a id="more"></a></p><h2 id="1-1-创建进程函数"><a href="#1-1-创建进程函数" class="headerlink" title="1.1 创建进程函数"></a>1.1 创建进程函数</h2><pre><code>头文件： #include &lt;unistd.h&gt;原型： pid_t fork(void);功能：创建一个进程 返回值：子进程 返回0 父进程 返回子进程的ID </code></pre><p>fork简介：fork函数创建了一个新的进程，新的进程即子进程将复制父进程所有的数据与指令，子进程拥有独立的内存空间以及系统资源。</p><p>问题一：fork 成功后子进程从哪里开始执行？</p><p>　　从调用完fork后面的语句处开始执行！</p><p>问题二：父子进程的执行顺序是怎样的？</p><p>　　由时间片轮转调度决定，没有固定的执行顺序。</p><p>问题三：什么是时间片？</p><p>　　时间片：为实现并发，每个进程被分配一个时间段，称作它的时间片，即该进程允许运行的时间。若时间片结束进程还在运行，则cpu将被剥夺并分配给另一个进程，若进程在时间片结束前阻塞或结束，则cpu当即切换。系统内进程按时间顺序排成一个队列，每次调度，系统都将cpu分配给队内首进程，此进程用完它的时间片后被移动到队列的末尾，接着下一个执行。<br>　　时间片过短：导致过多的进程切换，降低效率。<br>　　时间片过长：引起对短的交互请求响应变差。</p><h2 id="1-2-获取标识码函数"><a href="#1-2-获取标识码函数" class="headerlink" title="1.2 获取标识码函数"></a>1.2 获取标识码函数</h2><pre><code>头文件： #include &lt;unistd.h&gt;        #include &lt;sys/types.h&gt;原型： pid_t getpid(void); //获取本身ID       pid_t getppid(void);//获取父进程ID 功能：获取进程号 返回值：返回所获取的PID</code></pre><h2 id="1-3-进程退出函数"><a href="#1-3-进程退出函数" class="headerlink" title="1.3 进程退出函数"></a>1.3 进程退出函数</h2><p>exit:</p><pre><code>头文件：#include&lt;stdlib.h&gt;原型：void exit(int status)；功能：用来退出进程，进行清除操作参数： 退出码，stasus用来存返回值。</code></pre><p>_exit:</p><pre><code>头文件：#include&lt;unistd.h&gt;原型：void _exit(int status);功能：用来退出进程，立即退出参数： 退出码，stasus用来存返回值。</code></pre><p>_Exit:</p><pre><code>头文件：#include&lt;stdlib.h&gt;原型：void _Exit(int status);功能：用来退出进程，立即退出参数： 退出码，stasus用来存返回值。</code></pre><p>进程死亡：自杀与被杀。自杀：自然死亡与调用退出函数。<br>思考：<br>问题一：return和exit有什么区别？</p><p>a.exit是一个函数，有参数。exit执行完后把控制权交给系统。 </p><p>b.return是函数执行完后的返回。renturn执行完后把控制权交给调用函数。</p><p>问题二：exit与_exit有什么异同？</p><p>相同点：都是用来终止进程的，执行这两个函数时，系统无条件终止所有操作，清除数据，终止进程运行。<br>不同点：_exit执行后立即返回给内核，exit先执行一些清除操作再将控制权交给内核。<br>清除操作：刷新流（stdin，stdout …）,将缓冲区的数据处理完成。</p><p>c.通过实例来区别<br>实例1：exit.c</p><blockquote><p>1 #include “stdio.h”<br>2 #include “stdlib.h”<br>3<br>4 int main()<br>5 {<br>6 printf(“using exit—-\n”);<br>7 printf(“This is the content in buffer”);<br>8 exit(0);<br>9 } </p></blockquote><p>执行结果：</p><blockquote><p>using exit—-<br>This is the content in buffer</p></blockquote><p>实例2：_exit.c</p><blockquote><p>1 #include”stdio.h”<br>2 #include”unistd.h”<br>3<br>4 int main(void)<br>5 {<br>6 printf(“using _exit–\n”);<br>7 printf(“This is the content in buffer”);<br>8 _exit(0);<br>9 }</p></blockquote><p>执行结果：</p><blockquote><p>using exit—-</p></blockquote><p>printf函数就是使用缓冲I/O的方式，该函数在遇到“\n”换行符时自动的从缓冲区中将记录读出。所以exit()将缓冲区的数据写完后才退出，而_exit()函数直接退出。 </p><h2 id="1-4等待子进程结束函数"><a href="#1-4等待子进程结束函数" class="headerlink" title="1.4等待子进程结束函数"></a>1.4等待子进程结束函数</h2><p>wait:</p><pre><code>头文件：#include &lt;sys/types.h&gt;       #include &lt;sys/wait.h&gt;原型：pid_t wait(int *status);功能：等待任意一个子进程状态改变参数： 退出码，stasus用来存子进程返回值。返回值：成功返回 等待到的子进程进程号    失败返回-1 同时errno被设置</code></pre><p>waitpid    :</p><pre><code>头文件：#include &lt;sys/types.h&gt;       #include &lt;sys/wait.h&gt;原型：pid_t waitpid(pid_t pid, int *status, int options);功能：等待任意一个子进程状态改变参数： pid :指定要等待的进程号     stasus :用来存子进程返回值。    options :等待模式：0 表示默认选项 阻塞等待                WNOHANG 非阻塞等待 假设此时没有子进程退出就立刻返回 不用等待！返回值：成功返回 等待到的子进程进程号       失败返回-1 同时errno被设置</code></pre><p>退出码解析：status用来保存子进程的退出状态的信息，用以下宏来解析。</p><p>WIFEXITED（status） ：如果为真，子进程正常退出。</p><p>WEXITSTATUS (status) ：返回子进程的退出码<br>正常退出 main函数的返回值或者exit _Exit _exit 的参数<br>WIFSIGNALED （status） ：如果为真则表示这个子进程是被一个信号干掉的！<br>WCONTINUED （status）  ：如果为真表示 这个子进程是被信号唤醒的！</p><h1 id="二、exec函数族"><a href="#二、exec函数族" class="headerlink" title="二、exec函数族"></a>二、exec函数族</h1><p></p><p style="background-color:rgb(125,255,0)">　　让另外一个程序文件的数据和指令集合 替换 之前拷贝的数据指令！注意这里的替换只能替换 用户数据和指令 系统数据无法替换！</p><p>如图所示：<img src="//bclnc.github.io/2018/09/20/学习之路——进程/exec函数族.png" alt="进程状态"></p><h2 id="1-1综述exec函数族"><a href="#1-1综述exec函数族" class="headerlink" title="1.1综述exec函数族"></a>1.1综述exec函数族</h2><pre><code>&gt;头文件：#include &lt;unistd.h&gt;原型：#include &lt;unistd.h&gt;extern char **environ;int execl(const char *path,const char *arg, ...);int execlp(const char *file, const char *arg, ...);int execle(const char *path,const char *arg,..., char * const envp[]);int execv(const char *path,char *const argv[]);int execvp(const char *file, char *const argv[]);int execve(const char *file,char *const argv[],char *const envp[]);功能： exec函数族装入并运行程序path/file，并将参数arg0(arg1, arg2, argv[], envp[])传递给子程序参数： path :要运行的程序       arg  :存放参数。返回值：出错返回-1，</code></pre><p>l：list：希望接收到以逗号分隔的参数列表，列表以NULL指针作为结束标志。<br>　　　　　把要执行的那个程序文件的参数，以list的形式输出。<br>v：vector：希望接收到一个以NULL结尾的字符串数组的指针（char* argv[]）<br>　　    　　　把要执行的程序文件的参数 以向量即数组的方式出现<br>p:path：环境变量：整个系统中任何一个进程都可以访问的变量。<br>　　　　　一个以NULL结尾的字符串数组指针，函数可以DOS的PATH变量查找子程序文件<br>e:envp：函数传递指定参数envp，允许改变子进程的环境，无后缀e时，子进程使用当前程序的环境。<br>是不是看的头皮发麻？实践出真知。实例如下：</p><h2 id="2-1-头文件及字符串数组指针的声明"><a href="#2-1-头文件及字符串数组指针的声明" class="headerlink" title="2.1 头文件及字符串数组指针的声明"></a>2.1 头文件及字符串数组指针的声明</h2><pre><code>#include &lt;stdio.h&gt;#include &lt;stdlib.h&gt;#include &lt;unistd.h&gt;#include &lt;string.h&gt;#include &lt;errno.h&gt;int main(int argc, char *argv[]){  //以NULL结尾的字符串数组的指针，适合包含v的exec函数参数  char *arg[] = {&quot;ls&quot;, &quot;-a&quot;, NULL};｝</code></pre><h2 id="2-2-创建子进程并调用函数execl"><a href="#2-2-创建子进程并调用函数execl" class="headerlink" title="2.2 创建子进程并调用函数execl"></a>2.2 创建子进程并调用函数execl</h2><ul><li><p>execl 中希望接收以逗号分隔的参数列    表，并以NULL指针为结束标志</p><p>  if( fork() == 0 )<br>  {</p><pre><code>// in clild printf( &quot;1------------execl------------\n&quot; );if( execl( &quot;/bin/ls&quot;, &quot;ls&quot;,&quot;-a&quot;, NULL ) == -1 ){  perror( &quot;execl error &quot; );  exit(1);}</code></pre><p>  }</p></li></ul><h2 id="2-3-创建子进程并调用函数execv"><a href="#2-3-创建子进程并调用函数execv" class="headerlink" title="2.3 创建子进程并调用函数execv"></a>2.3 创建子进程并调用函数execv</h2><ul><li>execv中希望接收一个以NULL结尾的字符串数组的指针<pre><code>if( fork() == 0 ){  printf(&quot;2------------execv------------\n&quot;);  if( execv( &quot;/bin/ls&quot;,arg) &lt; 0)  {    perror(&quot;execv error &quot;);    exit(1);  }}</code></pre></li></ul><h2 id="2-4-创建子进程并调用-execlp"><a href="#2-4-创建子进程并调用-execlp" class="headerlink" title="2.4 创建子进程并调用 execlp"></a>2.4 创建子进程并调用 execlp</h2><ul><li>l 　希望接收以逗号分隔的参数列表，列表以NULL指针作为结束标志</li><li><p>p　是一个以NULL结尾的字符串数组指针，函数可以DOS的PATH变量查找子程序文件</p><pre><code>if( fork() == 0 ){  printf(&quot;3------------execlp------------\n&quot;);  if( execlp( &quot;ls&quot;, &quot;ls&quot;, &quot;-a&quot;, NULL ) &lt; 0 )  {    perror( &quot;execlp error &quot; );    exit(1);  }}</code></pre></li></ul><h2 id="2-５-创建子里程并调用execvp"><a href="#2-５-创建子里程并调用execvp" class="headerlink" title="2.５ 创建子里程并调用execvp"></a>2.５ 创建子里程并调用execvp</h2><ul><li>v 　望接收到一个以NULL结尾的字符串数    组的指针</li><li><p>p　 是一个以NULL结尾的字符串数组指针，函数可以DOS的PATH变量查找子程序文件</p><pre><code> if( fork() == 0 ){   printf(&quot;4------------execvp------------\n&quot;);   if( execvp( &quot;ls&quot;, arg ) &lt; 0 )   {     perror( &quot;execvp error &quot; );     exit( 1 );   }</code></pre><p>   }</p></li></ul><h2 id="2-6-创建子进程并调用execle"><a href="#2-6-创建子进程并调用execle" class="headerlink" title="2.6 创建子进程并调用execle"></a>2.6 创建子进程并调用execle</h2><ul><li>l 　希望接收以逗号分隔的参数列表，列表以NULL指针作为结束标志</li><li><p>e　函数传递指定参数envp，允许改变子进程的环境，无后缀e时，子进程使用当前程序的环境</p><p>  if( fork() == 0 )<br>  {</p><pre><code>printf(&quot;5------------execle------------\n&quot;);if( execle(&quot;/bin/ls&quot;, &quot;ls&quot;, &quot;-a&quot;, NULL, NULL) == -1 ){  perror(&quot;execle error &quot;);  exit(1);}</code></pre><p>  }</p></li></ul><h2 id="2-7-创建子进程并调用execve"><a href="#2-7-创建子进程并调用execve" class="headerlink" title="2.7 创建子进程并调用execve"></a>2.7 创建子进程并调用execve</h2><ul><li>v 　希望接收到一个以NULL结尾的字符串数组的指针</li><li><p>e 　函数传递指定参数envp，允许改变子进程的环境，无后缀e时，子进程使用当前程序的环境</p><pre><code>if( fork() == 0 ){  printf(&quot;6------------execve-----------\n&quot;);  if( execve( &quot;/bin/ls&quot;, arg, NULL ) == 0)  {   perror(&quot;execve error &quot;);    exit(1);  }}</code></pre></li></ul><h2 id="2-8-类exec函数"><a href="#2-8-类exec函数" class="headerlink" title="2.8 类exec函数"></a>2.8 类exec函数</h2><p>system：用来执行指定的命令或程序<br>    &gt;头文件:#include &lt;stdlib.h&gt;<br>     原型：int system(const char *command);<br>    参数： command 要执行的指令 或者程序<br>    返回值  失败  返回 -1<br>           成功  除此以外进程的 退出码！</p><p>实例：<br>    &gt;cmd[256];<br>    sprintf(cmd,”%s %s %s”,”./hello”,”1”,”2”)<br>    system(cmd);<br>总结进程：<br>    进程 就是向操作系统申请资源的最小单位！<br>    通过进程可实现并发！因为 进程就实现并发的一种机制！<br>    进程的地址空间相互独立 创建一个进程时其会拷贝父进程的所有数据和指令！<br>    进程间的数据独立！<br>文终。</p>]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;一、进程函数&quot;&gt;&lt;a href=&quot;#一、进程函数&quot; class=&quot;headerlink&quot; title=&quot;一、进程函数&quot;&gt;&lt;/a&gt;一、进程函数&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;p style=&quot;background-color:rgb(125,255,0)&quot;&gt;　　进程——进程是独立功能的程序关于某个数据集合上的一次运行活动！&lt;br&gt;
+      &lt;h1 id=&quot;一、进程函数&quot;&gt;&lt;a href=&quot;#一、进程函数&quot; class=&quot;headerlink&quot; title=&quot;一、进程函数&quot;&gt;&lt;/a&gt;一、进程函数&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;p style=&quot;background-color:rgb(125,255,0)&quot;&gt;　　进程——进程是独立功能的程序关于某个数据集合上的一次运行活动！&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
-      <category term="学习之路" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+      <category term="学习之路" scheme="http://bclnc.github.io/categories/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
     
     
-      <category term="进程与线程" scheme="http://yoursite.com/tags/%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/"/>
+      <category term="进程与线程" scheme="http://bclnc.github.io/tags/%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>学习之路 —— 进程与线程　　（一）</title>
-    <link href="http://yoursite.com/2018/09/20/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF%20%E2%80%94%E2%80%94%20%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/"/>
-    <id>http://yoursite.com/2018/09/20/学习之路 —— 进程与线程/</id>
+    <link href="http://bclnc.github.io/2018/09/20/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF%20%E2%80%94%E2%80%94%20%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/"/>
+    <id>http://bclnc.github.io/2018/09/20/学习之路 —— 进程与线程/</id>
     <published>2018-09-20T05:58:20.000Z</published>
     <updated>2018-12-06T03:37:49.548Z</updated>
     
@@ -255,17 +255,17 @@
     
     </summary>
     
-      <category term="学习之路" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+      <category term="学习之路" scheme="http://bclnc.github.io/categories/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
     
     
-      <category term="进程与线程" scheme="http://yoursite.com/tags/%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/"/>
+      <category term="进程与线程" scheme="http://bclnc.github.io/tags/%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>简易hexo的搭建　　（一）</title>
-    <link href="http://yoursite.com/2018/09/08/hexo--%E6%90%AD%E5%BB%BA/"/>
-    <id>http://yoursite.com/2018/09/08/hexo--搭建/</id>
+    <link href="http://bclnc.github.io/2018/09/08/hexo--%E6%90%AD%E5%BB%BA/"/>
+    <id>http://bclnc.github.io/2018/09/08/hexo--搭建/</id>
     <published>2018-09-08T05:58:20.000Z</published>
     <updated>2018-12-06T03:36:49.123Z</updated>
     
@@ -280,10 +280,10 @@
     
     </summary>
     
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+      <category term="hexo" scheme="http://bclnc.github.io/categories/hexo/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="http://bclnc.github.io/tags/hexo/"/>
     
   </entry>
   

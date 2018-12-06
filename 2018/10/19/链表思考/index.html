@@ -89,13 +89,13 @@
 <meta property="og:site_name" content="伏窗尾的猫">
 <meta property="og:description" content="链表思考链表题能充分的显示出做题者的思维能力，在这就总结一些网络上看到的链表题及个人解法。 一、判断单链表是否有环。　　一个单链表若是有环，则无法从头遍历到尾，可以设置不同步的两个指针从头开始遍历，若相遇则代表有环。比如P1=P1-&amp;gt;next，p2=p2-&amp;gt;next-&amp;gt;next。在拜读某位大牛的博客时，看到一篇文章。可以参考。http://ostermiller.org/find">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2018/10/19/链表思考/1.png">
-<meta property="og:image" content="http://yoursite.com/2018/10/19/链表思考/2.png">
-<meta property="og:updated_time" content="2018-10-19T13:12:35.101Z">
+<meta property="og:image" content="http://yoursite.com/2018/10/19/链表思考/链表思考/1.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/19/链表思考/链表思考/2.png">
+<meta property="og:updated_time" content="2018-12-06T03:37:32.286Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="链表思考">
 <meta name="twitter:description" content="链表思考链表题能充分的显示出做题者的思维能力，在这就总结一些网络上看到的链表题及个人解法。 一、判断单链表是否有环。　　一个单链表若是有环，则无法从头遍历到尾，可以设置不同步的两个指针从头开始遍历，若相遇则代表有环。比如P1=P1-&amp;gt;next，p2=p2-&amp;gt;next-&amp;gt;next。在拜读某位大牛的博客时，看到一篇文章。可以参考。http://ostermiller.org/find">
-<meta name="twitter:image" content="http://yoursite.com/2018/10/19/链表思考/1.png">
+<meta name="twitter:image" content="http://yoursite.com/2018/10/19/链表思考/链表思考/1.png">
 
 
 
@@ -337,8 +337,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-10-19T21:12:35+08:00">
-                2018-10-19
+              <time title="更新于" itemprop="dateModified" datetime="2018-12-06T11:37:32+08:00">
+                2018-12-06
               </time>
             
           </span>
@@ -411,11 +411,11 @@
       
         <h1 id="链表思考"><a href="#链表思考" class="headerlink" title="链表思考"></a>链表思考</h1><p>链表题能充分的显示出做题者的思维能力，在这就总结一些网络上看到的链表题及个人解法。</p>
 <h3 id="一、判断单链表是否有环。"><a href="#一、判断单链表是否有环。" class="headerlink" title="一、判断单链表是否有环。"></a>一、判断单链表是否有环。</h3><p>　　一个单链表若是有环，则无法从头遍历到尾，可以设置不同步的两个指针从头开始遍历，若相遇则代表有环。比如P1=P1-&gt;next，p2=p2-&gt;next-&gt;next。在拜读某位大牛的博客时，看到一篇文章。可以参考。<br><a href="http://ostermiller.org/find_loop_singly_linked_list.html" target="_blank" rel="noopener">http://ostermiller.org/find_loop_singly_linked_list.html</a></p>
-<h3 id="二、判断两个单链表是否有交点，有的话，找出交点。"><a href="#二、判断两个单链表是否有交点，有的话，找出交点。" class="headerlink" title="二、判断两个单链表是否有交点，有的话，找出交点。"></a>二、判断两个单链表是否有交点，有的话，找出交点。</h3><p>　　判断是否相交有很多方法，想的最简单的就是两个链表如果相交，链表尾肯定是一样的，那么同时遍历到尾，看是否相等就好了。或者利用上面的办法，将其中一个链表的尾只想另一链表头，判断是否有环。画个图理解一下。<img src="/2018/10/19/链表思考/1.png" alt="图例"></p>
+<h3 id="二、判断两个单链表是否有交点，有的话，找出交点。"><a href="#二、判断两个单链表是否有交点，有的话，找出交点。" class="headerlink" title="二、判断两个单链表是否有交点，有的话，找出交点。"></a>二、判断两个单链表是否有交点，有的话，找出交点。</h3><p>　　判断是否相交有很多方法，想的最简单的就是两个链表如果相交，链表尾肯定是一样的，那么同时遍历到尾，看是否相等就好了。或者利用上面的办法，将其中一个链表的尾只想另一链表头，判断是否有环。画个图理解一下。<img src="链表思考/1.png" alt="图例"></p>
 <p>　　两个链表，表头一样，那么直接找到了交点。如果不一样，假设第一个链表长度为len1，第二个为len2，然后找出长度较长的，让长度较长的链表指针向后移动|len1 - len2| (len1-len2的绝对值)，然后在开始遍历两个链表，判断节点是否相同即可。</p>
 <h3 id="三、判断两个单链表是否带环，是的话，找出交点。"><a href="#三、判断两个单链表是否带环，是的话，找出交点。" class="headerlink" title="三、判断两个单链表是否带环，是的话，找出交点。"></a>三、判断两个单链表是否带环，是的话，找出交点。</h3><p>　　这是上述两题的合集，可以先用异步的办法判断是否有环。交点ｐ在环中，然后把环断开，P1=P,P2=P-&gt;next，p-&gt;next=NULL.现在有两个单链表了，一个从head开始，一个从P2开始。利用第二题的办法就能搞定了。</p>
 <h3 id="四、删除单链表的某节点"><a href="#四、删除单链表的某节点" class="headerlink" title="四、删除单链表的某节点"></a>四、删除单链表的某节点</h3><p>　　删除节点不是很简单吗，遍历链表，建立一个循环来找到这个节点r，每次没找到都保存一下上一节点pre，删除的时候只需要pre-&gt;next=r-&gt;next,然后r-&gt;next=NULL,free（r），r=NULL。</p>
-<p>但是这一点都不cool，还要找到上一节点，还得遍历，还得有头节点。很复杂。那么，我们可不可以鸠占鹊巢呢，我们有这个节点p，有这个节点p的下一个节点p-&gt;next,那么，我们把p-&gt;next的数据全部拷贝到p，然后p-&gt;next=p-&gt;next-&gt;next,再干掉p-&gt;next。成功实现功能。<br><img src="/2018/10/19/链表思考/2.png" alt="图例"></p>
+<p>但是这一点都不cool，还要找到上一节点，还得遍历，还得有头节点。很复杂。那么，我们可不可以鸠占鹊巢呢，我们有这个节点p，有这个节点p的下一个节点p-&gt;next,那么，我们把p-&gt;next的数据全部拷贝到p，然后p-&gt;next=p-&gt;next-&gt;next,再干掉p-&gt;next。成功实现功能。<br><img src="链表思考/2.png" alt="图例"></p>
 <h3 id="五，在单链表的某节点前插入节点"><a href="#五，在单链表的某节点前插入节点" class="headerlink" title="五，在单链表的某节点前插入节点"></a>五，在单链表的某节点前插入节点</h3><p>　　常规办法，遍历找到某节点的前节点，然后前节点next指向新节点，新节点next指向某节点。</p>
 <p>　　cool点的办法，鸠占鹊巢式，某节点Ｐ后面插入一个新节点，然后把Ｐ的数据复制到新节点中，再给Ｐ赋值（原本新节点的值）。</p>
 <h3 id="六、删除单链表的倒数第k个节点。"><a href="#六、删除单链表的倒数第k个节点。" class="headerlink" title="六、删除单链表的倒数第ｋ个节点。"></a>六、删除单链表的倒数第ｋ个节点。</h3><p>　　p1指向头节点，P2指向头节点后的第k个节点，（写个for循环，p2从头开始，每次循环指向下一个），两个p同时向后步进，直到p2到链表尾。 此时p1就是要删除的节点了，再鸠占鹊巢式删除p1,收工。</p>
@@ -544,11 +544,43 @@ void quickSort(list mylist)
     
     
     
+	
+	<div>
+	  
+		<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">------ 本文结束------</div>
+    
+</div>
+	  
+	</div>
+	
+	
 
     
 
     
 
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    喵呜  |  喵呜
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2018/10/19/链表思考/" title="链表思考">http://yoursite.com/2018/10/19/链表思考/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+  <li class="post-copyright-license">
+    并保留本声明和上方二维码。感谢您的阅读和支持！
+  </li>
+</ul>
+      </div>
     
 
     <footer class="post-footer">
@@ -681,7 +713,7 @@ void quickSort(list mylist)
 			
 			  <div class="site-state-item site-state-tags">
 				<a href="/tags/ || tags">
-				  <span class="site-state-item-count">7</span>
+				  <span class="site-state-item-count">8</span>
 				  <span class="site-state-item-name">标签</span>
 				</a>
 			  </div>
@@ -1257,7 +1289,7 @@ void quickSort(list mylist)
 
   
   <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("", "");</script>
+  <script>AV.initialize("C4C53NNHHx80rdEcr9XGvVER-gzGzoHsz", "onx6D9nlRn56BhlHoI3E08PQ");</script>
   <script>
     function showTime(Counter) {
       var query = new AV.Query(Counter);

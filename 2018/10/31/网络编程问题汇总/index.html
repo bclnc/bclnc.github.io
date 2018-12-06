@@ -89,13 +89,13 @@
 <meta property="og:site_name" content="伏窗尾的猫">
 <meta property="og:description" content="网络编程的常见问题1、TCP和UDP的区别。 这是一个超级常见的问题，只要考网络编程就会有，但是实际上想说全比较难，建议写成两行，对比观看就很清楚。 TCP：面向连接的可靠的字节流服务。用户数据稳定，有序的进行传输，占用资源也多。（关键词，连接，可靠，字节流，稳定有序，占资源）    　　　　 UDP:无连接，不可靠的用户数据报服务。数据尽可能的高效发送，会丢包，数据传输也可能无序。（关键词，无连">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2018/10/31/网络编程问题汇总/三次握手.png">
-<meta property="og:image" content="http://yoursite.com/2018/10/31/网络编程问题汇总/四次挥手.png">
-<meta property="og:updated_time" content="2018-11-26T13:36:47.446Z">
+<meta property="og:image" content="http://yoursite.com/2018/10/31/网络编程问题汇总/网络编程问题汇总/三次握手.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/31/网络编程问题汇总/网络编程问题汇总/四次挥手.png">
+<meta property="og:updated_time" content="2018-12-06T03:37:41.191Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="笔试常见问题汇总">
 <meta name="twitter:description" content="网络编程的常见问题1、TCP和UDP的区别。 这是一个超级常见的问题，只要考网络编程就会有，但是实际上想说全比较难，建议写成两行，对比观看就很清楚。 TCP：面向连接的可靠的字节流服务。用户数据稳定，有序的进行传输，占用资源也多。（关键词，连接，可靠，字节流，稳定有序，占资源）    　　　　 UDP:无连接，不可靠的用户数据报服务。数据尽可能的高效发送，会丢包，数据传输也可能无序。（关键词，无连">
-<meta name="twitter:image" content="http://yoursite.com/2018/10/31/网络编程问题汇总/三次握手.png">
+<meta name="twitter:image" content="http://yoursite.com/2018/10/31/网络编程问题汇总/网络编程问题汇总/三次握手.png">
 
 
 
@@ -337,8 +337,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-11-26T21:36:47+08:00">
-                2018-11-26
+              <time title="更新于" itemprop="dateModified" datetime="2018-12-06T11:37:41+08:00">
+                2018-12-06
               </time>
             
           </span>
@@ -421,23 +421,55 @@
 <p>第一次握手：客户端向服务端发起连接请求，同步位SYN=1,seq=x；客户端状态SYN-SENT(同步发送)。</p>
 <p>第二次握手：此时服务端接收到请求，状态由listen变为SYN-RECV,并回复应答包SYN=1,ACK=1，ack=x+1，seq=y。</p>
 <p>第三次握手：客户端接收到服务端的应答包，向服务端发送确认应答包，ACK=1,ack=y+1，seq=z.</p>
-<p><img src="/2018/10/31/网络编程问题汇总/三次握手.png" alt="图示"></p>
+<p><img src="./网络编程问题汇总/三次握手.png" alt="图示"></p>
 <p><strong>tcp的四次挥手</strong><br>先假设是客户端发起的中断连接请求，这样好描述一些。</p>
 <p>第一次挥手：客户端发出连接释放请求FIN=1,seq=x，并停止数据发送，进入FIN-WAIT-1状态。</p>
 <p>第二次挥手：服务端收到释放请求后发出确认请求报文段，ACK=1,ack=x+1,seq=y,并进入CLOSE-WAIT状态，此时A-B的连接中断。A接收到B的应答包后，进入FIN-WAIT-2状态。</p>
 <p>第三次挥手：客户端没有要发送的数据后，向A发送中断连接请求包，FIN=1,ACK=1,ack=x+1，seq=z。B进入LAST-ACK状态，等待最后的确认。</p>
-<p>第四次挥手：服务端收到中断连接包后，发出确认包，ACK=1,seq=y+1，ack=z+1，A进入TIME-WAIT状态，等待2ms后，进入close状态。<br><img src="/2018/10/31/网络编程问题汇总/四次挥手.png" alt="图示"></p>
+<p>第四次挥手：服务端收到中断连接包后，发出确认包，ACK=1,seq=y+1，ack=z+1，A进入TIME-WAIT状态，等待2ms后，进入close状态。<br><img src="./网络编程问题汇总/四次挥手.png" alt="图示"></p>
 
       
     </div>
     
     
     
+	
+	<div>
+	  
+		<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">------ 本文结束------</div>
+    
+</div>
+	  
+	</div>
+	
+	
 
     
 
     
 
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    喵呜  |  喵呜
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2018/10/31/网络编程问题汇总/" title="笔试常见问题汇总">http://yoursite.com/2018/10/31/网络编程问题汇总/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+  <li class="post-copyright-license">
+    并保留本声明和上方二维码。感谢您的阅读和支持！
+  </li>
+</ul>
+      </div>
     
 
     <footer class="post-footer">
@@ -570,7 +602,7 @@
 			
 			  <div class="site-state-item site-state-tags">
 				<a href="/tags/ || tags">
-				  <span class="site-state-item-count">7</span>
+				  <span class="site-state-item-count">8</span>
 				  <span class="site-state-item-name">标签</span>
 				</a>
 			  </div>
@@ -1146,7 +1178,7 @@
 
   
   <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("", "");</script>
+  <script>AV.initialize("C4C53NNHHx80rdEcr9XGvVER-gzGzoHsz", "onx6D9nlRn56BhlHoI3E08PQ");</script>
   <script>
     function showTime(Counter) {
       var query = new AV.Query(Counter);

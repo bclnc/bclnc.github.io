@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="搭建须知准备工作在开始前，你必须已经： 1.有一个github账号  2.安装好git for windows  3.安装有node.js、npm，并有一定的了解 搭建github博客创建仓库　　新建一个名为 (用户名.github.io)的仓库，例如你的用户名为test则创建一个名为test.github.io的仓库，将来你的网站访问地址为 http：//用户名.github.io 　　是不是很">
+<meta name="description" content="搭建须知准备工作在开始前，你必须已经： 1.有一个github账号  2.安装好git for windows  3.安装有node.js、npm，并有一定的了解 详情请见 搭建github博客创建仓库　　新建一个名为 (用户名.github.io)的仓库，例如你的用户名为test则创建一个名为test.github.io的仓库，将来你的网站访问地址为 http：//用户名.github.io">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="简易hexo的搭建　　（一）">
 <meta property="og:url" content="http://bclnc.github.io/2018/09/08/hexo--搭建/index.html">
 <meta property="og:site_name" content="伏窗尾的猫">
-<meta property="og:description" content="搭建须知准备工作在开始前，你必须已经： 1.有一个github账号  2.安装好git for windows  3.安装有node.js、npm，并有一定的了解 搭建github博客创建仓库　　新建一个名为 (用户名.github.io)的仓库，例如你的用户名为test则创建一个名为test.github.io的仓库，将来你的网站访问地址为 http：//用户名.github.io 　　是不是很">
+<meta property="og:description" content="搭建须知准备工作在开始前，你必须已经： 1.有一个github账号  2.安装好git for windows  3.安装有node.js、npm，并有一定的了解 详情请见 搭建github博客创建仓库　　新建一个名为 (用户名.github.io)的仓库，例如你的用户名为test则创建一个名为test.github.io的仓库，将来你的网站访问地址为 http：//用户名.github.io">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-06T03:36:49.123Z">
+<meta property="og:updated_time" content="2019-01-04T16:20:34.727Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="简易hexo的搭建　　（一）">
-<meta name="twitter:description" content="搭建须知准备工作在开始前，你必须已经： 1.有一个github账号  2.安装好git for windows  3.安装有node.js、npm，并有一定的了解 搭建github博客创建仓库　　新建一个名为 (用户名.github.io)的仓库，例如你的用户名为test则创建一个名为test.github.io的仓库，将来你的网站访问地址为 http：//用户名.github.io 　　是不是很">
+<meta name="twitter:description" content="搭建须知准备工作在开始前，你必须已经： 1.有一个github账号  2.安装好git for windows  3.安装有node.js、npm，并有一定的了解 详情请见 搭建github博客创建仓库　　新建一个名为 (用户名.github.io)的仓库，例如你的用户名为test则创建一个名为test.github.io的仓库，将来你的网站访问地址为 http：//用户名.github.io">
 
 
 
@@ -334,8 +334,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-12-06T11:36:49+08:00">
-                2018-12-06
+              <time title="更新于" itemprop="dateModified" datetime="2019-01-05T00:20:34+08:00">
+                2019-01-05
               </time>
             
           </span>
@@ -412,9 +412,11 @@
 2.安装好git for windows
 
 3.安装有node.js、npm，并有一定的了解
-</code></pre><h1 id="搭建github博客"><a href="#搭建github博客" class="headerlink" title="搭建github博客"></a>搭建github博客</h1><h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>　　新建一个名为 (用户名.github.io)的仓库，例如你的用户名为test<br>则创建一个名为test.github.io的仓库，将来你的网站访问地址为</p>
+</code></pre><p>详情请见</p>
+<h1 id="搭建github博客"><a href="#搭建github博客" class="headerlink" title="搭建github博客"></a>搭建github博客</h1><h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>　　新建一个名为 (用户名.github.io)的仓库，例如你的用户名为test<br>则创建一个名为test.github.io的仓库，将来你的网站访问地址为</p>
 <pre><code>http：//用户名.github.io
 </code></pre><p>　　是不是很方便，但每个github账户只能有一个这样可以直接访问域名的仓库。创建成功后，以后你网站的所有代码都放在这个仓库啦。</p>
+<p>新建仓库——点击右侧头像——点击your repositories——点击new——在repository name输入：用户名.github.io——create repository；</p>
 <h2 id="配置SSH-key"><a href="#配置SSH-key" class="headerlink" title="配置SSH key"></a>配置SSH key</h2><p>　　为什么要配置这个呢，因为提交代码肯定是要拥有你的github权限才行，但直接使用用户名和密码太不安全了，所以使用SSH key来解决本地和服务器连接的问题。在git bush中输入</p>
 <pre><code>$ cd ~/.ssh #检查本机已存在的ssh
 </code></pre><p>　　如果提示No such file or directory 说明是第一次使用git。</p>
@@ -589,7 +591,7 @@ $ hexo s # 启动服务
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -599,8 +601,8 @@ $ hexo s # 启动服务
               
               
               <div class="site-state-item site-state-categories">
-                <a href="/categories/index-1.html">
-                  <span class="site-state-item-count">2</span>
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -609,7 +611,7 @@ $ hexo s # 启动服务
 			
 			  <div class="site-state-item site-state-tags">
 				<a href="/tags/ || tags">
-				  <span class="site-state-item-count">8</span>
+				  <span class="site-state-item-count">9</span>
 				  <span class="site-state-item-name">标签</span>
 				</a>
 			  </div>
@@ -674,7 +676,7 @@ $ hexo s # 启动服务
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

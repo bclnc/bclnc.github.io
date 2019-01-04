@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://bclnc.github.io/"/>
-  <updated>2018-12-06T06:14:19.136Z</updated>
+  <updated>2019-01-04T15:52:52.915Z</updated>
   <id>http://bclnc.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git-hexo搭建前传</title>
+    <link href="http://bclnc.github.io/2019/01/04/git-hexo%E6%90%AD%E5%BB%BA%E5%89%8D%E4%BC%A0/"/>
+    <id>http://bclnc.github.io/2019/01/04/git-hexo搭建前传/</id>
+    <published>2019-01-04T06:20:26.000Z</published>
+    <updated>2019-01-04T15:52:52.915Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>此为hexo搭建前传，其为hexo的简易安装做进一步的完善，零基础实现git+hexo个人博客教程。即git账号创建，软件安装，信息配置等信息。</p><h3 id="git账号获取"><a href="#git账号获取" class="headerlink" title="git账号获取"></a>git账号获取</h3><p>首先，百度进入github官网，注册账号。输入名称，邮箱，以及密码。</p><p><img src="//bclnc.github.io/2019/01/04/git-hexo搭建前传/git1.png" alt="git1"></p><p>然后校验是否为人机，创建账号。</p><p><img src="//bclnc.github.io/2019/01/04/git-hexo搭建前传/git1s.png" alt="git1s"></p><p>账号设置，选择免费的。</p><p><img src="//bclnc.github.io/2019/01/04/git-hexo搭建前传/git2.png" alt="git2"></p><p>附加选项不选，一般来说个人的话不需要选择。</p><p><img src="//bclnc.github.io/2019/01/04/git-hexo搭建前传/git3.png" alt="git3"></p><p>至此，账号创建成功。</p><h3 id="git环境搭建"><a href="#git环境搭建" class="headerlink" title="git环境搭建"></a>git环境搭建</h3><p>下载git for windows——直接百度git for windows，然后下载并安装至熟悉位置。</p><p><img src="//bclnc.github.io/2019/01/04/git-hexo搭建前传/gitgui.png" alt="gitgui"></p><p>完成后，会出现git bush，点击，弹出一个类似于命令行的窗口，说明git安装成功！<br>安装完成后，还需要最后一步设置，在命令行输入：</p><blockquote><p>$ git config –global user.name “Your Name”</p><p>$ git config –global user.email “<a href="mailto:email@example.com" target="_blank" rel="noopener">email@example.com</a>“</p></blockquote><h3 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h3><p>百度node.js,进入官网下载。安装，一路next，直到结束。<br>重启git bush，输入node -v，得到类似结果。<img src="//bclnc.github.io/2019/01/04/git-hexo搭建前传/node1.png" alt="node1">。输入npm -v，也能得到版本号。即安装结束。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;此为hexo搭建前传，其为hexo的简易安装做进一步的完善，零基础实现git+hexo个人博客教程。即git账号创建，软件安装，信息配置等信
+      
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://bclnc.github.io/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://bclnc.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自电脑重装所需步骤</title>
+    <link href="http://bclnc.github.io/2018/12/15/%E8%87%AA%E7%94%B5%E8%84%91%E9%87%8D%E8%A3%85%E6%89%80%E9%9C%80%E6%AD%A5%E9%AA%A4/"/>
+    <id>http://bclnc.github.io/2018/12/15/自电脑重装所需步骤/</id>
+    <published>2018-12-15T06:57:53.000Z</published>
+    <updated>2019-01-04T07:47:07.170Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="电脑重装"><a href="#电脑重装" class="headerlink" title="电脑重装"></a>电脑重装</h2><h3 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h3><p>　　重装系统的第一步就是备份了，记住自己现在电脑有什么是需要保存下来，并且网络上并不好寻找的东西，放置至备份盘中。以下，是自己的备份列表：</p><blockquote><p>git-hexo文件夹（保存了自己所写的博文）</p><p>雨滴桌面资源（可要可不要，资源还是挺好找的）</p><p>图标包资源(win10白色图标包)</p><p>chrome浏览器插件（友范全网通vip/infinity/tampermonkey）</p><p>各式学习软件安装包（Keil uVision5 / Source Insight 4.0 / MATLAB/VMware虚拟机/ubuntu镜像）</p><p>各式实用软件安装包（quick look/memreduct/wise hotkey/snipaste/CCleaner/f.lux/7.zip/pandownload/StartIsBackCfg）</p></blockquote><h3 id="重装"><a href="#重装" class="headerlink" title="重装"></a>重装</h3><p>启动盘——大白菜pe</p><p>系统镜像——win10家庭版</p><p>进入电脑bios，在boot中将首选启动项选择为u盘，注意，在进bios之前将U盘插入，否则无法检测。</p><p>保存设置并启动，进入pe系统，使用磁盘分区助手分盘，选择系统镜像安装。</p><h3 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h3><p>打开备份软件，逐一安装。</p><p>安全软件 —— 火绒；</p><p>清理软件 —— ccleaner；</p><p>解压软件 —— 7.zip；</p><p>护眼软件 —— f.lux；</p><p>截屏软件 —— snipaste；</p><p>内存清理 —— memreduct；</p><p>快捷键选 —— wise hotkey；</p><p>百度云盘 —— pandownload；</p><h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><p>git环境见——git环境搭建。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;电脑重装&quot;&gt;&lt;a href=&quot;#电脑重装&quot; class=&quot;headerlink&quot; title=&quot;电脑重装&quot;&gt;&lt;/a&gt;电脑重装&lt;/h2&gt;&lt;h3 id=&quot;备份&quot;&gt;&lt;a href=&quot;#备份&quot; class=&quot;headerlink&quot; title=&quot;备份&quot;&gt;&lt;/a&gt;备份&lt;/h
+      
+    
+    </summary>
+    
+      <category term="随记" scheme="http://bclnc.github.io/categories/%E9%9A%8F%E8%AE%B0/"/>
+    
+    
+      <category term="电脑随记" scheme="http://bclnc.github.io/tags/%E7%94%B5%E8%84%91%E9%9A%8F%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>简易hexo的搭建　　（二）</title>
@@ -267,9 +317,9 @@
     <link href="http://bclnc.github.io/2018/09/08/hexo--%E6%90%AD%E5%BB%BA/"/>
     <id>http://bclnc.github.io/2018/09/08/hexo--搭建/</id>
     <published>2018-09-08T05:58:20.000Z</published>
-    <updated>2018-12-06T03:36:49.123Z</updated>
+    <updated>2019-01-04T16:20:34.727Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="搭建须知"><a href="#搭建须知" class="headerlink" title="搭建须知"></a>搭建须知</h1><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>在开始前，你必须已经：</p><pre><code>1.有一个github账号2.安装好git for windows3.安装有node.js、npm，并有一定的了解</code></pre><h1 id="搭建github博客"><a href="#搭建github博客" class="headerlink" title="搭建github博客"></a>搭建github博客</h1><h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>　　新建一个名为 (用户名.github.io)的仓库，例如你的用户名为test<br>则创建一个名为test.github.io的仓库，将来你的网站访问地址为</p><pre><code>http：//用户名.github.io</code></pre><p>　　是不是很方便，但每个github账户只能有一个这样可以直接访问域名的仓库。创建成功后，以后你网站的所有代码都放在这个仓库啦。</p><h2 id="配置SSH-key"><a href="#配置SSH-key" class="headerlink" title="配置SSH key"></a>配置SSH key</h2><p>　　为什么要配置这个呢，因为提交代码肯定是要拥有你的github权限才行，但直接使用用户名和密码太不安全了，所以使用SSH key来解决本地和服务器连接的问题。在git bush中输入</p><pre><code>$ cd ~/.ssh #检查本机已存在的ssh</code></pre><p>　　如果提示No such file or directory 说明是第一次使用git。</p><pre><code>$ssh-keygen -t rsa -C &quot;邮件地址&quot;</code></pre><p>　　然后连续三次回车，最终生成一个文件在用户目录下，打开用户目录，找到.ssh\id_rsa.pub文件，打开并复制其中的内容，打开github主页，进入个人设置-&gt;SSH and GPG keys -&gt;New SSH key。将内容粘贴到key中，title随便填，保存。</p><h2 id="测试是否成功"><a href="#测试是否成功" class="headerlink" title="测试是否成功"></a>测试是否成功</h2><pre><code>$ ssh -T git@github.com</code></pre><p>　　如果提示Are you sure you want to continue connecting (yes/no)?，输入yes，然后会看到：</p><pre><code>Hi XXX! You&apos;ve successfully authenticated, but GitHub does not provide shell access.</code></pre><p>　　配置成功，但还得再配置两条</p><pre><code>$ git config --global user.name &quot;xxx&quot;// 你的github用户名，非昵称$ git config --global user.email  &quot;xxx@qq.com&quot;// 填写你的github注册邮箱</code></pre><h1 id="使用——hexo"><a href="#使用——hexo" class="headerlink" title="使用——hexo"></a>使用——hexo</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre><code>$ npm install -g hexo</code></pre><h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>　　在电脑的某个地方新建一个hexo文件夹，例如我在c：\bin\hexo,记住安装位置，常用。</p><pre><code>$ cd /c/bin/hexo/$ hexo init</code></pre><p>　　hexo会自动下载一些文件在这个目录下．接下来：</p><pre><code>$ hexo g # 生成$ hexo s # 启动服务</code></pre><p>　　执行以上命令之后，hexo就会在public文件夹生成相关html文件，这些文件将来都是要提交到github去的。</p><p>　　hexo s是开启本地预览服务，打开浏览器访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 我们将见到我们的第一篇文章，Hello World。</p><p>　　到现在，ｈｅｘｏ博客的搭建已经完成，摩天大楼的基石已经建立，接下来，就是美化，填充，与修缮了，随着本人的学习，hexo博客教程也将接着完善——敬请期待。　　　　</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="搭建须知"><a href="#搭建须知" class="headerlink" title="搭建须知"></a>搭建须知</h1><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>在开始前，你必须已经：</p><pre><code>1.有一个github账号2.安装好git for windows3.安装有node.js、npm，并有一定的了解</code></pre><p>详情请见</p><h1 id="搭建github博客"><a href="#搭建github博客" class="headerlink" title="搭建github博客"></a>搭建github博客</h1><h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>　　新建一个名为 (用户名.github.io)的仓库，例如你的用户名为test<br>则创建一个名为test.github.io的仓库，将来你的网站访问地址为</p><pre><code>http：//用户名.github.io</code></pre><p>　　是不是很方便，但每个github账户只能有一个这样可以直接访问域名的仓库。创建成功后，以后你网站的所有代码都放在这个仓库啦。</p><p>新建仓库——点击右侧头像——点击your repositories——点击new——在repository name输入：用户名.github.io——create repository；</p><h2 id="配置SSH-key"><a href="#配置SSH-key" class="headerlink" title="配置SSH key"></a>配置SSH key</h2><p>　　为什么要配置这个呢，因为提交代码肯定是要拥有你的github权限才行，但直接使用用户名和密码太不安全了，所以使用SSH key来解决本地和服务器连接的问题。在git bush中输入</p><pre><code>$ cd ~/.ssh #检查本机已存在的ssh</code></pre><p>　　如果提示No such file or directory 说明是第一次使用git。</p><pre><code>$ssh-keygen -t rsa -C &quot;邮件地址&quot;</code></pre><p>　　然后连续三次回车，最终生成一个文件在用户目录下，打开用户目录，找到.ssh\id_rsa.pub文件，打开并复制其中的内容，打开github主页，进入个人设置-&gt;SSH and GPG keys -&gt;New SSH key。将内容粘贴到key中，title随便填，保存。</p><h2 id="测试是否成功"><a href="#测试是否成功" class="headerlink" title="测试是否成功"></a>测试是否成功</h2><pre><code>$ ssh -T git@github.com</code></pre><p>　　如果提示Are you sure you want to continue connecting (yes/no)?，输入yes，然后会看到：</p><pre><code>Hi XXX! You&apos;ve successfully authenticated, but GitHub does not provide shell access.</code></pre><p>　　配置成功，但还得再配置两条</p><pre><code>$ git config --global user.name &quot;xxx&quot;// 你的github用户名，非昵称$ git config --global user.email  &quot;xxx@qq.com&quot;// 填写你的github注册邮箱</code></pre><h1 id="使用——hexo"><a href="#使用——hexo" class="headerlink" title="使用——hexo"></a>使用——hexo</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre><code>$ npm install -g hexo</code></pre><h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>　　在电脑的某个地方新建一个hexo文件夹，例如我在c：\bin\hexo,记住安装位置，常用。</p><pre><code>$ cd /c/bin/hexo/$ hexo init</code></pre><p>　　hexo会自动下载一些文件在这个目录下．接下来：</p><pre><code>$ hexo g # 生成$ hexo s # 启动服务</code></pre><p>　　执行以上命令之后，hexo就会在public文件夹生成相关html文件，这些文件将来都是要提交到github去的。</p><p>　　hexo s是开启本地预览服务，打开浏览器访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 我们将见到我们的第一篇文章，Hello World。</p><p>　　到现在，ｈｅｘｏ博客的搭建已经完成，摩天大楼的基石已经建立，接下来，就是美化，填充，与修缮了，随着本人的学习，hexo博客教程也将接着完善——敬请期待。　　　　</p>]]></content>
     
     <summary type="html">
     

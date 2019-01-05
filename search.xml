@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[简易hexo搭建（三）]]></title>
+    <url>%2F2019%2F01%2F05%2F%E7%AE%80%E6%98%93hexo%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[git-hexo搭建前传]]></title>
     <url>%2F2019%2F01%2F04%2Fgit-hexo%E6%90%AD%E5%BB%BA%E5%89%8D%E4%BC%A0%2F</url>
     <content type="text"><![CDATA[前言此为hexo搭建前传，其为hexo的简易安装做进一步的完善，零基础实现git+hexo个人博客教程。即git账号创建，软件安装，信息配置等信息。 git账号获取首先，百度进入github官网，注册账号。输入名称，邮箱，以及密码。 然后校验是否为人机，创建账号。 账号设置，选择免费的。 附加选项不选，一般来说个人的话不需要选择。 至此，账号创建成功。 git环境搭建下载git for windows——直接百度git for windows，然后下载并安装至熟悉位置。 完成后，会出现git bush，点击，弹出一个类似于命令行的窗口，说明git安装成功！安装完成后，还需要最后一步设置，在命令行输入： $ git config –global user.name “Your Name” $ git config –global user.email “email@example.com“ node.js安装百度node.js,进入官网下载。安装，一路next，直到结束。重启git bush，输入node -v，得到类似结果。。输入npm -v，也能得到版本号。即安装结束。]]></content>

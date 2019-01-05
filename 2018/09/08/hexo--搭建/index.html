@@ -89,13 +89,13 @@
 <meta property="og:site_name" content="伏窗尾的猫">
 <meta property="og:description" content="搭建须知准备工作在开始前，你必须已经： 1.有一个github账号  2.安装好git for windows  3.安装有node.js、npm，并有一定的了解 详情请见git-hexo搭建前传 搭建github博客创建仓库　　新建一个名为 (用户名.github.io)的仓库，例如你的用户名为test则创建一个名为test.github.io的仓库，将来你的网站访问地址为 http：//用户名">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://bclnc.github.io/2018/09/08/hexo--搭建/git-hexo搭建前传/git_k3.png">
-<meta property="og:image" content="http://bclnc.github.io/2018/09/08/hexo--搭建/git-hexo搭建前传/deploy.png">
-<meta property="og:updated_time" content="2019-01-05T07:10:07.965Z">
+<meta property="og:image" content="http://bclnc.github.io/2018/09/08/hexo--搭建/git_k3.png">
+<meta property="og:image" content="http://bclnc.github.io/2018/09/08/hexo--搭建/deploy.png">
+<meta property="og:updated_time" content="2019-01-05T07:18:26.173Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="简易hexo的搭建　　（一）">
 <meta name="twitter:description" content="搭建须知准备工作在开始前，你必须已经： 1.有一个github账号  2.安装好git for windows  3.安装有node.js、npm，并有一定的了解 详情请见git-hexo搭建前传 搭建github博客创建仓库　　新建一个名为 (用户名.github.io)的仓库，例如你的用户名为test则创建一个名为test.github.io的仓库，将来你的网站访问地址为 http：//用户名">
-<meta name="twitter:image" content="http://bclnc.github.io/2018/09/08/hexo--搭建/git-hexo搭建前传/git_k3.png">
+<meta name="twitter:image" content="http://bclnc.github.io/2018/09/08/hexo--搭建/git_k3.png">
 
 
 
@@ -337,7 +337,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-01-05T15:10:07+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-01-05T15:18:26+08:00">
                 2019-01-05
               </time>
             
@@ -419,7 +419,7 @@
 <h1 id="搭建github博客"><a href="#搭建github博客" class="headerlink" title="搭建github博客"></a>搭建github博客</h1><h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>　　新建一个名为 (用户名.github.io)的仓库，例如你的用户名为test<br>则创建一个名为test.github.io的仓库，将来你的网站访问地址为</p>
 <pre><code>http：//用户名.github.io
 </code></pre><p>　　是不是很方便，但每个github账户只能有一个这样可以直接访问域名的仓库。创建成功后，以后你网站的所有代码都放在这个仓库啦。</p>
-<p>新建仓库——点击右侧头像——点击your repositories——点击new——在repository name输入：用户名.github.io——create repository；<br>提示图示：勾选黑色圈<img src="//bclnc.github.io/2018/09/08/hexo--搭建/git-hexo搭建前传/git_k3.png" alt="提示">。</p>
+<p>新建仓库——点击右侧头像——点击your repositories——点击new——在repository name输入：用户名.github.io——create repository；<br>提示图示：勾选黑色圈<img src="//bclnc.github.io/2018/09/08/hexo--搭建/git_k3.png" alt="提示">。</p>
 <h2 id="配置SSH-key"><a href="#配置SSH-key" class="headerlink" title="配置SSH key"></a>配置SSH key</h2><p>　　为什么要配置这个呢，因为提交代码肯定是要拥有你的github权限才行，但直接使用用户名和密码太不安全了，所以使用SSH key来解决本地和服务器连接的问题。在git bush中输入</p>
 <pre><code>$ cd ~/.ssh #检查本机已存在的ssh
 </code></pre><p>　　如果提示No such file or directory 说明是第一次使用git。</p>
@@ -443,7 +443,7 @@ $ hexo s # 启动服务
 <p>　　hexo s是开启本地预览服务，打开浏览器访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 我们将见到我们的第一篇文章，Hello World。</p>
 <h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>最后，则是将写好的博客部署到github上，</p>
 <pre><code>$ hexo d # 部署
-</code></pre><p>如果部署不成功，请返回配置SSH key重新配置，检查是否出错，若无问题，则在hexo目录下的_config.yml文件下找到deploy，检查并更改为如下形式。<br><img src="//bclnc.github.io/2018/09/08/hexo--搭建/git-hexo搭建前传/deploy.png" alt="deploy"></p>
+</code></pre><p>如果部署不成功，请返回配置SSH key重新配置，检查是否出错，若无问题，则在hexo目录下的_config.yml文件下找到deploy，检查并更改为如下形式。<br><img src="//bclnc.github.io/2018/09/08/hexo--搭建/deploy.png" alt="deploy"></p>
 <p>　　到现在，ｈｅｘｏ博客的搭建已经完成，摩天大楼的基石已经建立，接下来，就是美化，填充，与修缮了，随着本人的学习，hexo博客教程也将接着完善——敬请期待。
 　　
 　　</p>
@@ -514,8 +514,8 @@ $ hexo s # 启动服务
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/09/20/学习之路——进程/" rel="prev" title="学习之路 —— 进程与线程　　（二）">
-                学习之路 —— 进程与线程　　（二） <i class="fa fa-chevron-right"></i>
+              <a href="/2018/09/20/学习之路 —— 进程与线程/" rel="prev" title="学习之路 —— 进程与线程　　（一）">
+                学习之路 —— 进程与线程　　（一） <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -597,7 +597,7 @@ $ hexo s # 启动服务
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -607,7 +607,7 @@ $ hexo s # 启动服务
               
               
               <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
+                <a href="/categories/index-1.html">
                   <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>

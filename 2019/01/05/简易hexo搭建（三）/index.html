@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="hexo," />
 
 
 
@@ -81,14 +81,18 @@
 
 
 
+<meta name="description" content="前言跨过了2018，终于，我记起来要写一篇hexo主题的博客了，由于最近教几个室友搭建属于自己的博客，为此还特意写了一篇软件安装的博文。最后就是完善一下自己的主题了，由于自己也不是很懂，那么就简单介绍一下如何使用自己的主题，也是最常用的hexo主题——Next,很多功能都可以通过百度去设置，所以也不做详细的介绍，主要是叙述如何给自己的博客加上这么个主题，并且添加一些有效的功能，话不多说，开始吧。">
+<meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="简易hexo搭建（三）">
 <meta property="og:url" content="http://bclnc.github.io/2019/01/05/简易hexo搭建（三）/index.html">
 <meta property="og:site_name" content="伏窗尾的猫">
+<meta property="og:description" content="前言跨过了2018，终于，我记起来要写一篇hexo主题的博客了，由于最近教几个室友搭建属于自己的博客，为此还特意写了一篇软件安装的博文。最后就是完善一下自己的主题了，由于自己也不是很懂，那么就简单介绍一下如何使用自己的主题，也是最常用的hexo主题——Next,很多功能都可以通过百度去设置，所以也不做详细的介绍，主要是叙述如何给自己的博客加上这么个主题，并且添加一些有效的功能，话不多说，开始吧。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-05T07:14:17.526Z">
+<meta property="og:updated_time" content="2019-01-05T16:30:02.726Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="简易hexo搭建（三）">
+<meta name="twitter:description" content="前言跨过了2018，终于，我记起来要写一篇hexo主题的博客了，由于最近教几个室友搭建属于自己的博客，为此还特意写了一篇软件安装的博文。最后就是完善一下自己的主题了，由于自己也不是很懂，那么就简单介绍一下如何使用自己的主题，也是最常用的hexo主题——Next,很多功能都可以通过百度去设置，所以也不做详细的介绍，主要是叙述如何给自己的博客加上这么个主题，并且添加一些有效的功能，话不多说，开始吧。">
 
 
 
@@ -330,12 +334,34 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-01-05T15:14:17+08:00">
-                2019-01-05
+              <time title="更新于" itemprop="dateModified" datetime="2019-01-06T00:30:02+08:00">
+                2019-01-06
               </time>
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -380,7 +406,75 @@
       
 
       
-        
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>跨过了2018，终于，我记起来要写一篇hexo主题的博客了，由于最近教几个室友搭建属于自己的博客，为此还特意写了一篇软件安装的博文。最后就是完善一下自己的主题了，由于自己也不是很懂，那么就简单介绍一下如何使用自己的主题，也是最常用的hexo主题——Next,很多功能都可以通过百度去设置，所以也不做详细的介绍，主要是叙述如何给自己的博客加上这么个主题，并且添加一些有效的功能，话不多说，开始吧。</p>
+<h2 id="小细节"><a href="#小细节" class="headerlink" title="小细节"></a>小细节</h2><h3 id="博文插图插件"><a href="#博文插图插件" class="headerlink" title="博文插图插件"></a>博文插图插件</h3><p>1、配置站点文件——config.yml</p>
+<blockquote>
+<p>post_accet_folder: ture</p>
+</blockquote>
+<p>2、安装上传本地图片的插件</p>
+<blockquote>
+<p>$ npm install hexo-asset-image -–save</p>
+</blockquote>
+<h3 id="搜索插件"><a href="#搜索插件" class="headerlink" title="搜索插件"></a>搜索插件</h3><p>1、安装搜索插件</p>
+<blockquote>
+<p>$ npm install hexo-generator-searchdb -–save</p>
+</blockquote>
+<p>2、配置站点文件——config.yml</p>
+<blockquote>
+<p>搜索<br>search:<br>  path: search.xml<br>  field: post<br>  format: html<br>  limit: 10000</p>
+</blockquote>
+<p>3.配置主题文件——config.yml</p>
+<blockquote>
+<p>local_search:<br>  enable: true</p>
+</blockquote>
+<h2 id="next主题"><a href="#next主题" class="headerlink" title="next主题"></a>next主题</h2><h3 id="next主题安装"><a href="#next主题安装" class="headerlink" title="next主题安装"></a>next主题安装</h3><p>在hexo目录下输入</p>
+<pre><code>git clone https://github.com/iissnan/hexo-theme-next themes/next
+</code></pre><h3 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h3><p>1、配置站点文件——config.yml</p>
+<pre><code>theme: next
+</code></pre><p>完成后，hexo clean。然后hexo s –debug。此时即可使用浏览器访问 <a href="http://localhost:4000，检查站点是否正确运行。" target="_blank" rel="noopener">http://localhost:4000，检查站点是否正确运行。</a></p>
+<p>如果外观正常，即成功安装。</p>
+<h3 id="主题选择"><a href="#主题选择" class="headerlink" title="主题选择"></a>主题选择</h3><h4 id="主题切换"><a href="#主题切换" class="headerlink" title="主题切换"></a>主题切换</h4><p>主题的切换通过更改 主题配置文件，搜索 scheme 关键字。 你会看到有三行 scheme 的配置，将你需用启用的 scheme 前面注释 # 去除即可。</p>
+<blockquote>
+<p>scheme: Muse<br>  scheme: Mist<br>  scheme: Pisces    </p>
+</blockquote>
+<h4 id="语言选择"><a href="#语言选择" class="headerlink" title="语言选择"></a>语言选择</h4><p>在站点配置文件下：</p>
+<blockquote>
+<p>language: zh-Hans</p>
+</blockquote>
+<h4 id="菜单设置"><a href="#菜单设置" class="headerlink" title="菜单设置"></a>菜单设置</h4><p>在主题配置文件下：</p>
+<blockquote>
+<p>menu：其下的内容自己添加</p>
+</blockquote>
+<h4 id="侧栏设置"><a href="#侧栏设置" class="headerlink" title="侧栏设置"></a>侧栏设置</h4><p>在主题配置文件：</p>
+<blockquote>
+<p>sidebar:</p>
+</blockquote>
+<p>  position: left</p>
+<h4 id="侧栏显示时机"><a href="#侧栏显示时机" class="headerlink" title="侧栏显示时机"></a>侧栏显示时机</h4><p>在主题配置文件：</p>
+<blockquote>
+<p>sidebar:<br>  display: post</p>
+</blockquote>
+<ul>
+<li>post - 默认行为，在文章页面（拥有目录列表）时显示</li>
+<li>always - 在所有页面中都显示</li>
+<li>hide - 在所有页面中都隐藏（可以手动展开）</li>
+<li>remove - 完全移除</li>
+</ul>
+<h4 id="头像设置"><a href="#头像设置" class="headerlink" title="头像设置"></a>头像设置</h4><p>在主题配置文件下：</p>
+<blockquote>
+<p>avatar: 路径</p>
+</blockquote>
+<p>放置在 source/images/ 目录下 </p>
+<p>配置为：avatar: /images/图片名.png</p>
+<h4 id="作者昵称"><a href="#作者昵称" class="headerlink" title="作者昵称"></a>作者昵称</h4><p>在站点配置文件下：</p>
+<blockquote>
+<p>author:昵称</p>
+</blockquote>
+<h4 id="站点描述"><a href="#站点描述" class="headerlink" title="站点描述"></a>站点描述</h4><p>在站点配置文件下：</p>
+<blockquote>
+<p>description:描述</p>
+</blockquote>
+
       
     </div>
     
@@ -425,6 +519,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+        </div>
       
 
       
@@ -495,8 +595,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -525,7 +634,7 @@
               
               
               <div class="site-state-item site-state-categories">
-                <a href="/categories/index-1.html">
+                <a href="/categories/index.html">
                   <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
@@ -565,6 +674,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小细节"><span class="nav-text">小细节</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#博文插图插件"><span class="nav-text">博文插图插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜索插件"><span class="nav-text">搜索插件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#next主题"><span class="nav-text">next主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#next主题安装"><span class="nav-text">next主题安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启用主题"><span class="nav-text">启用主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主题选择"><span class="nav-text">主题选择</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#主题切换"><span class="nav-text">主题切换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#语言选择"><span class="nav-text">语言选择</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#菜单设置"><span class="nav-text">菜单设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#侧栏设置"><span class="nav-text">侧栏设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#侧栏显示时机"><span class="nav-text">侧栏显示时机</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#头像设置"><span class="nav-text">头像设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#作者昵称"><span class="nav-text">作者昵称</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#站点描述"><span class="nav-text">站点描述</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
